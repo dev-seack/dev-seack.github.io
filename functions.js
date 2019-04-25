@@ -14,8 +14,6 @@ $(document).ready(() => {
     lastScrollTop = st <= 0 ? 0 : st; // For Mobile or negative scrolling
   });
   $(".mobileMenuToggle").on("click", () => {
-    console.log("clicked");
-
     $("body").toggleClass("openMenu");
     $(".mobileMenu").toggleClass("active");
   });
