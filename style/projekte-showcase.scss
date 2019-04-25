@@ -1,0 +1,113 @@
+.showcase {
+  margin-top: 250px;
+  &.right {
+    .textContent {
+      @media screen and (min-width: 900px) {
+        margin-left: auto;
+        margin-right: 0;
+      }
+    }
+  }
+  &.left {
+    .imageContent {
+      @media screen and (min-width: 900px) {
+        .imageGroup {
+          order: 2;
+        }
+        .big {
+          order: 1;
+        }
+      }
+    }
+    .textContent {
+      @media screen and (min-width: 900px) {
+        margin-right: auto;
+        margin-left: 0;
+      }
+    }
+  }
+  .imageContent {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 3rem;
+    @media screen and (min-width: 900px) {
+      flex-wrap: nowrap;
+    }
+    img {
+      position: relative;
+      box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.15);
+    }
+    .imageGroup {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      @media screen and (min-width: 900px) {
+        width: 50%;
+      }
+      .small {
+        width: 50%;
+        z-index: 1;
+      }
+      .medium {
+        z-index: 2;
+        width: 100%;
+      }
+    }
+
+    .big {
+      z-index: 3;
+      width: 100%;
+      @media screen and (min-width: 900px) {
+        width: 65%;
+      }
+    }
+  }
+  .textContent {
+    @media screen and (min-width: 900px) {
+      width: 60%;
+      background: $light;
+      box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.15);
+      border-radius: 7px;
+      padding: 2rem 2rem;
+      position: relative;
+      top: -75px;
+      z-index: 50;
+      &:before {
+        content: "";
+        width: 50px;
+        height: 50px;
+        background: $light;
+
+        display: inline-block;
+        position: absolute;
+        right: 15%;
+        top: -25px;
+        transform: rotate(45deg);
+      }
+    }
+
+    .heading {
+      font-weight: 600;
+      font-size: 42px;
+      margin-bottom: 10px;
+    }
+    .shortDescription {
+      font-weight: 300;
+      font-size: 1.1rem;
+      line-height: 1.25rem;
+      margin-bottom: 2rem;
+    }
+    .tasksHeading {
+      font-size: 1.35rem;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+  }
+  .secondaryButton {
+    margin-top: 3.5rem;
+    margin-left: 0;
+  }
+}

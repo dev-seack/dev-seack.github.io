@@ -1,0 +1,15 @@
+.missionStatement {
+  padding-top: $navHeight + 150px;
+  h1 {
+    text-transform: unset;
+    text-align: center;
+    font-size: 42px;
+    @media screen and (min-width: 900px) {
+      font-size: 52px;
+    }
+    @media screen and (min-width: 1200px) {
+      font-size: 62px;
+    }
+    font-weight: 600;
+  }
+}

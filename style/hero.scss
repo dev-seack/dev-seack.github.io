@@ -1,0 +1,44 @@
+.hero {
+  margin-top: 0 !important;
+  height: 100vh;
+  .sloganContainer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    height: 100%;
+    text-align: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    .slogan {
+      font-weight: 800;
+      font-size: 52px;
+      text-transform: uppercase;
+      text-align: center;
+      @media screen and (min-width: 700px) {
+        font-size: 82px;
+      }
+      @media screen and (min-width: 1200px) {
+        font-size: 102px;
+      }
+    }
+    .subslogan {
+      font-weight: 400;
+      font-size: 21px;
+      text-transform: none;
+      @media screen and (min-width: 700px) {
+        font-size: 25px;
+      }
+    }
+  }
+  .heroSocialContainer {
+    position: absolute;
+    bottom: 30px;
+    .heroSocialItem::before {
+      font-size: 1.45rem;
+    }
+    .heroSocialItem:nth-child(2) {
+      margin: 0 1rem;
+    }
+  }
+}

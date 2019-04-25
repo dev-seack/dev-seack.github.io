@@ -1,0 +1,94 @@
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  pointer-events: none;
+}
+
+body {
+  background: $main;
+  color: $light;
+  overflow-x: hidden;
+  font-family: futura-pt, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+
+  &.openMenu {
+    overflow: hidden;
+  }
+  &.light {
+    background: $light;
+    color: $dark !important;
+  }
+}
+
+a,
+a:hover,
+a:focus {
+  color: $light;
+  outline: none;
+  text-transform: none;
+  text-decoration: none;
+}
+
+a:hover,
+button:hover {
+  cursor: pointer;
+}
+
+::-moz-selection {
+  background: $accent;
+  color: $dark;
+}
+::selection {
+  background: $accent;
+  color: $dark;
+}
+
+.accent {
+  color: $accent;
+}
+
+.light {
+  color: $light;
+}
+
+.dark {
+  color: $dark;
+}
+
+.centered {
+  margin: 0 auto;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  @media screen and (min-width: 700px) {
+    padding: 0 70px;
+  }
+}
+
+.fullContainer {
+  padding: 0 1.5rem;
+
+  @media screen and (min-width: 700px) {
+    padding: 0 70px;
+  }
+}
+
+.negativeContainer {
+  margin: 0 -1.5rem;
+
+  @media screen and (min-width: 700px) {
+    margin: 0 -70px;
+  }
+}
+
+.fluidContainer {
+  width: 100%;
+  margin: 0;
+}

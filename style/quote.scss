@@ -1,0 +1,55 @@
+.quote {
+  background-color: $dark;
+  margin-top: 500px;
+  margin-bottom: 500px;
+  position: relative;
+  &:before,
+  &:after {
+    content: url("../assets/Legarti-Webcontent-Quote-Bg.svg");
+    background: url("../assets/Legarti-Webcontent-Quote-Bg.svg") top left
+      no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 200px;
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    @media screen and (min-width: 1200px) {
+      height: 250px;
+    }
+  }
+  &:before {
+    top: -200px;
+    @media screen and (min-width: 1200px) {
+      top: -250px;
+    }
+  }
+  &:after {
+    transform: scaleY(-1);
+  }
+  .quoteText {
+    font-size: 32px;
+    color: $accent;
+    font-weight: 600;
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    @media screen and (min-width: 700px) {
+      font-size: 52px;
+    }
+    @media screen and (min-width: 900px) {
+      font-size: 62px;
+    }
+    @media screen and (min-width: 1000px) {
+      font-size: 72px;
+      padding: 0;
+    }
+    @media screen and (min-width: 1200px) {
+      font-size: 82px;
+      padding: 50px 0;
+    }
+  }
+}
