@@ -28,6 +28,7 @@ body {
   .navItemContainer {
     .menuIcon::before {
       content: "\f805";
+      font-weight: 900;
     }
   }
   &.openMenu {

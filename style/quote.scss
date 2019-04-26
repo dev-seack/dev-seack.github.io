@@ -1,7 +1,7 @@
 .quote {
   background-color: $dark;
-  margin-top: 500px;
-  margin-bottom: 500px;
+  margin-top: 350px;
+  margin-bottom: 350px;
   position: relative;
   &:before,
   &:after {
@@ -10,7 +10,13 @@
       no-repeat;
     background-size: cover;
     width: 100%;
-    height: 200px;
+    height: 120px;
+    @media screen and (min-width: 900px) {
+      height: 200px;
+    }
+    @media screen and (min-width: 1200px) {
+      height: 250px;
+    }
     display: block;
     position: absolute;
     left: 0;
@@ -21,7 +27,10 @@
     }
   }
   &:before {
-    top: -200px;
+    top: -120px;
+    @media screen and (min-width: 900px) {
+      top: -200px;
+    }
     @media screen and (min-width: 1200px) {
       top: -250px;
     }

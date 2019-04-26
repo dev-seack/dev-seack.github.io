@@ -66,14 +66,14 @@ button:hover {
 .container {
   max-width: 1000px;
   margin: 0 auto;
-  padding: 0 1.5rem;
+  padding: 0 1rem;
   @media screen and (min-width: 700px) {
     padding: 0 70px;
   }
 }
 
 .fullContainer {
-  padding: 0 1.5rem;
+  padding: 0 1rem;
 
   @media screen and (min-width: 700px) {
     padding: 0 70px;
@@ -81,7 +81,7 @@ button:hover {
 }
 
 .negativeContainer {
-  margin: 0 -1.5rem;
+  margin: 0 -1rem;
 
   @media screen and (min-width: 700px) {
     margin: 0 -70px;

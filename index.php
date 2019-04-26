@@ -69,13 +69,19 @@
           <h2>webseiten</h2>
           <a href="" class="primaryButton">Projekte</a>
         </div>
-        <div class="showcase"></div>
+        <div class="showcase fillContainer">
+          <img
+            src="./assets/Legarti-Webcontent-Showcase-Landingpage.png"
+            alt=""
+          />
+        </div>
       </section>
       <section class="quote">
         <h2 class="quoteText">
           the noblest art is that of making others happy
         </h2>
       </section>
+      <!-- LANDING SHOWCASE -->
       <section class="landingShowcase left">
         <img
           class="landingShowcaseImage"
@@ -119,12 +125,15 @@
           </div>
         </div>
       </section>
-      <section class="landingShowcase right">
-        <img
-          class="landingShowcaseImage"
-          src="./assets/Legarti-Webcontent-04-Landingpage.png"
-          alt=""
-        />
+      <section class="landingShowcase cinematicStory right">
+        <div class="cinematicStoryContainer">
+          <img
+            class="landingShowcaseImage"
+            src="./assets/Legarti-Webcontent-04-Landingpage.png"
+            alt=""
+          />
+        </div>
+
         <div class="landingShowcaseText">
           <h3 class="bigNumber accent">04</h3>
           <div class="">
@@ -139,6 +148,7 @@
           the noblest art is that of making others happy
         </h2>
       </section>
+      <!-- FOOTER -->
       <footer class="fullContainer">
         <div class="content">
           <div class="innerContent">

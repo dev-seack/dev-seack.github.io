@@ -18,35 +18,36 @@
     .primaryButton {
       margin: 2.5rem auto 0 auto;
       @media screen and (min-width: 1000px) {
-        margin: 2.5rem 0;
+        margin: 2.5rem 0 0 0;
       }
     }
   }
   .showcase {
     position: relative;
-    background: url("../assets/Legarti-Webcontent-Showcase-Landingpage.png")
-      center center no-repeat;
-    background-size: contain;
-    transform: scale(1.8);
-
-    width: 70%;
-    height: 500px;
-    margin: 0 auto;
-    @media screen and (min-width: 700px) {
-      width: 50%;
-    }
+    margin-top: 0;
+    order: 1;
     @media screen and (min-width: 1000px) {
       order: 2;
-      right: -200px;
-      top: -200px;
+      top: -120px;
+      right: -250px;
+      transform: scale(2);
     }
     @media screen and (min-width: 1200px) {
-      right: -300px;
-      top: -175px;
+      top: -250px;
+      right: -250px;
+      transform: scale(1.5);
     }
-    @media screen and (min-width: 1450px) {
-      right: -300px;
+    @media screen and (min-width: 1400px) {
       top: -300px;
+      right: -300px;
+      transform: scale(1.2);
+    }
+    @media screen and (min-width: 1800px) {
+      top: -400px;
+      right: -300px;
+      transform: scale(1);
+    }
+    img {
     }
   }
 }
