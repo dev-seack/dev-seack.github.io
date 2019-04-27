@@ -30,15 +30,14 @@ $(document).ready(() => {
   //POPUP
   $(".popup .closeIcon").on("click", () => {
     $(".popup").removeClass("active");
-    // $("body").toggleClass("openPopup");
     bodyScrollLock.clearAllBodyScrollLocks();
   });
   $(".showcase .textContent .showMore").on("click", function() {
     let popupName = $(this).data("targetpopup");
     const popupElement = $('.showcase .popup*[data-popup="' + popupName + '"]');
-    //$("body").toggleClass("openPopup");
-    bodyScrollLock.disableBodyScroll(popupElement);
-
     popupElement.addClass("active");
+    bodyScrollLock.disableBodyScroll(
+      document.querySelector('.showcase .popup[data-popup="' + popupName + '"]')
+    );
   });
 });
