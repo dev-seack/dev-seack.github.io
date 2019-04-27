@@ -1,11 +1,3 @@
-// 1. Import the functions
-const bodyScrollLock = require("body-scroll-lock");
-const disableBodyScroll = bodyScrollLock.disableBodyScroll;
-const enableBodyScroll = bodyScrollLock.enableBodyScroll;
-
-// 4. ...in some event handler after hiding the target element...
-enableBodyScroll(targetElement);
-
 $(document).ready(() => {
   var lastScrollTop = window.pageYOffset || document.documentElement.scrollTop;
   $(window).scroll(() => {
@@ -33,11 +25,11 @@ $(document).ready(() => {
   $(".popup .closeIcon").on("click", () => {
     $(".popup").removeClass("active");
     $("body").toggleClass("openPopup");
-    enableBodyScroll($("body"));
+    bodyScrollLock.clearAllBodyScrollLocks();
   });
   $(".showcase .textContent .showMore").on("click", function() {
     $("body").toggleClass("openPopup");
-    disableBodyScroll($("body"));
+    bodyScrollLock.disableBodyScroll($("body"));
     let popupName = $(this).data("targetpopup");
     $('.showcase .popup*[data-popup="' + popupName + '"]').addClass("active");
   });
