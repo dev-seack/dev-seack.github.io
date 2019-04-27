@@ -13,8 +13,21 @@ $(document).ready(() => {
     }
     lastScrollTop = st <= 0 ? 0 : st; // For Mobile or negative scrolling
   });
+
+  //MOBILE MENU
   $(".mobileMenuToggle").on("click", () => {
     $("body").toggleClass("openMenu");
     $(".mobileMenu").toggleClass("active");
+  });
+
+  //POPUP
+  $(".popup .closeIcon").on("click", () => {
+    $(".popup").removeClass("active");
+    $("body").toggleClass("openPopup");
+  });
+  $(".showcase .textContent .showMore").on("click", function() {
+    $("body").toggleClass("openPopup");
+    let popupName = $(this).data("targetpopup");
+    $('.showcase .popup*[data-popup="' + popupName + '"]').addClass("active");
   });
 });

@@ -24,6 +24,10 @@
   content: "\f167";
 }
 
+.closeIcon::before {
+  content: "\f410";
+}
+
 body {
   .navItemContainer {
     .menuIcon::before {

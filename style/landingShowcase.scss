@@ -118,9 +118,18 @@
 }
 
 .landingShowcase.cinematicStory {
-  order: 2;
   .cinematicStoryContainer {
     width: 100%;
+    order: 2;
+    @media screen and (min-width: 1000px) {
+      order: 1;
+    }
+  }
+  .landingShowcaseText {
+    order: 1;
+    @media screen and (min-width: 1000px) {
+      order: 2;
+    }
   }
   img {
     max-height: 90vh;
@@ -129,7 +138,6 @@
     margin: 0 auto;
   }
   @media screen and (min-width: 1000px) {
-    order: 1;
     img {
       padding: 0;
       padding-left: $borderDesktop;

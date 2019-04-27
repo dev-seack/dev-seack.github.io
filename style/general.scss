@@ -15,7 +15,8 @@ body {
   font-weight: 400;
   font-style: normal;
 
-  &.openMenu {
+  &.openMenu,
+  &.openPopup {
     overflow: hidden;
   }
   &.light {

@@ -239,7 +239,7 @@ body {
   font-weight: 400;
   font-style: normal;
 }
-body.openMenu {
+body.openMenu, body.openPopup {
   overflow: hidden;
 }
 body.light {
@@ -635,6 +635,7 @@ nav .navItemContainer .navItem.active {
     transform: scale(1);
   }
 }
+
 .landingShowcase {
   margin-top: 120px;
   margin-bottom: 4.5rem;
@@ -776,11 +777,22 @@ nav .navItemContainer .navItem.active {
   }
 }
 
-.landingShowcase.cinematicStory {
-  order: 2;
-}
 .landingShowcase.cinematicStory .cinematicStoryContainer {
   width: 100%;
+  order: 2;
+}
+@media screen and (min-width: 1000px) {
+  .landingShowcase.cinematicStory .cinematicStoryContainer {
+    order: 1;
+  }
+}
+.landingShowcase.cinematicStory .landingShowcaseText {
+  order: 1;
+}
+@media screen and (min-width: 1000px) {
+  .landingShowcase.cinematicStory .landingShowcaseText {
+    order: 2;
+  }
 }
 .landingShowcase.cinematicStory img {
   max-height: 90vh;
@@ -789,9 +801,6 @@ nav .navItemContainer .navItem.active {
   margin: 0 auto;
 }
 @media screen and (min-width: 1000px) {
-  .landingShowcase.cinematicStory {
-    order: 1;
-  }
   .landingShowcase.cinematicStory img {
     padding: 0;
     padding-left: 70px;
@@ -1030,6 +1039,116 @@ footer .bottom .rights {
   margin-left: 0;
 }
 
+.showcase .popup {
+  display: none;
+  opacity: 0;
+}
+
+.showcase .popup.active {
+  display: flex;
+  opacity: 1;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background: #ffffff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 101;
+  overflow: scroll;
+  padding-bottom: 2rem;
+}
+@media screen and (min-width: 900px) {
+  .showcase .popup.active {
+    flex-direction: row;
+  }
+}
+@media screen and (min-width: 900px) {
+  .showcase .popup.active {
+    padding: 0;
+  }
+}
+.showcase .popup.active .closeIcon {
+  color: #333333;
+  padding: 1rem;
+  width: 100%;
+  text-align: right;
+  cursor: pointer;
+  font-size: 2em;
+}
+@media screen and (min-width: 900px) {
+  .showcase .popup.active .closeIcon {
+    position: absolute;
+    top: 0;
+    padding: 1rem;
+  }
+}
+.showcase .popup.active .left {
+  width: 100%;
+}
+@media screen and (min-width: 900px) {
+  .showcase .popup.active .left {
+    height: 100%;
+    background: url("../assets/projekte/ucs/popup.jpg") top center no-repeat;
+    background-size: cover;
+  }
+}
+@media screen and (min-width: 900px) {
+  .showcase .popup.active .left img {
+    display: none;
+  }
+}
+.showcase .popup.active .left .taskDescription {
+  margin-top: 3rem;
+  margin-bottom: 0.5rem;
+}
+.showcase .popup.active .left .taskDescription h3 {
+  font-size: 1.35rem;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+.showcase .popup.active .left .taskDescription p {
+  font-weight: 300;
+  font-size: 1.25rem;
+  margin-bottom: 2.5rem;
+}
+@media screen and (min-width: 900px) {
+  .showcase .popup.active .left {
+    width: 45%;
+  }
+  .showcase .popup.active .left .taskDescription {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 1rem;
+    width: 45%;
+  }
+}
+.showcase .popup.active .right {
+  width: 100%;
+}
+.showcase .popup.active .right .projectDescription .heading {
+  font-weight: 600;
+  font-size: 32px;
+}
+.showcase .popup.active .right .projectDescription .text {
+  margin-top: 1rem;
+  font-weight: 300;
+  font-size: 1.1em;
+  line-height: 1.2em;
+  text-align: justify;
+}
+.showcase .popup.active .right .projectDescription .productLink {
+  margin: 1rem auto 0 auto;
+}
+@media screen and (min-width: 900px) {
+  .showcase .popup.active .right {
+    width: 55%;
+  }
+}
+
 .icon {
   font-family: "Font Awesome 5 Free";
   font-weight: 100;
@@ -1055,6 +1174,10 @@ footer .bottom .rights {
 
 .youtubeIcon::before {
   content: "";
+}
+
+.closeIcon::before {
+  content: "";
 }
 
 body .navItemContainer .menuIcon::before {
