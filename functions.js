@@ -28,9 +28,10 @@ $(document).ready(() => {
     bodyScrollLock.clearAllBodyScrollLocks();
   });
   $(".showcase .textContent .showMore").on("click", function() {
+    const popupElement = $('.showcase .popup*[data-popup="' + popupName + '"]');
     $("body").toggleClass("openPopup");
-    bodyScrollLock.disableBodyScroll($("body"));
+    bodyScrollLock.disableBodyScroll(popupElement);
     let popupName = $(this).data("targetpopup");
-    $('.showcase .popup*[data-popup="' + popupName + '"]').addClass("active");
+    popupElement.addClass("active");
   });
 });
