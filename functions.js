@@ -16,21 +16,27 @@ $(document).ready(() => {
 
   //MOBILE MENU
   $(".mobileMenuToggle").on("click", () => {
-    $("body").toggleClass("openMenu");
-    //disableBodyScroll($("body"));
+    // $("body").toggleClass("openMenu");
+    // disableBodyScroll($("body"));
+    if (!$(".mobileMenu").hasClass("active")) {
+      bodyScrollLock.disableBodyScroll();
+    } else {
+      bodyScrollLock.clearAllBodyScrollLocks();
+    }
+
     $(".mobileMenu").toggleClass("active");
   });
 
   //POPUP
   $(".popup .closeIcon").on("click", () => {
     $(".popup").removeClass("active");
-    $("body").toggleClass("openPopup");
+    // $("body").toggleClass("openPopup");
     bodyScrollLock.clearAllBodyScrollLocks();
   });
   $(".showcase .textContent .showMore").on("click", function() {
     let popupName = $(this).data("targetpopup");
     const popupElement = $('.showcase .popup*[data-popup="' + popupName + '"]');
-    $("body").toggleClass("openPopup");
+    //$("body").toggleClass("openPopup");
     bodyScrollLock.disableBodyScroll(popupElement);
 
     popupElement.addClass("active");
