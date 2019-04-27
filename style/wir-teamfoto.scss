@@ -1,0 +1,42 @@
+#teamFotoContainer {
+  position: relative;
+  margin-top: 150px;
+  @media screen and (min-width: 900px) {
+    margin-top: $navHeight + 150px;
+  }
+  .teamFoto {
+    border-radius: 5px;
+    box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.15);
+    margin-bottom: $borderMobile;
+  }
+  .socialMediaContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    @media screen and (min-width: 900px) {
+      background: $dark;
+      position: absolute;
+      top: 0;
+      right: $borderDesktop + 50px;
+      display: flex;
+      flex-direction: column;
+      padding: 0.5rem 1rem;
+      justify-content: space-between;
+      align-items: center;
+      border-radius: 0 0 5px 5px;
+      .icon {
+        margin: 0.5rem 0;
+      }
+    }
+    @media screen and (min-width: 1200px) {
+      padding: 1rem 2rem;
+      right: $borderDesktop * 2;
+      .icon {
+        margin: 1rem 0;
+      }
+    }
+    .icon {
+      font-size: 1.5rem;
+    }
+  }
+}
