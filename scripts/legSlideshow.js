@@ -87,8 +87,8 @@ if (typeof jQuery.when.all === 'undefined') {
             }
 
             //events
-            $(_this._elem).find('[data-slideshow-next').click(_this.next);
-            $(_this._elem).find('[data-slideshow-prev').click(_this.prev);
+            $(_this._elem).find('[data-slideshow-next]').click(_this.next);
+            $(_this._elem).find('[data-slideshow-prev]').click(_this.prev);
 
             // load all images nao
             $.each( settings.slides, function( key, value ) {
