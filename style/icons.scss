@@ -18,31 +18,41 @@
   font-family: "Font Awesome 5 Brands";
 }
 
-.instagramIcon::before {
+.right-arrow:before {
+  content: "\f0da";
+  font-weight: 900;
+}
+
+.left-arrow:before {
+  content: "\f0d9";
+  font-weight: 900;
+}
+
+.instagramIcon:before {
   content: "\f16d";
 }
 
-.facebookIcon::before {
+.facebookIcon:before {
   content: "\f082";
 }
-.youtubeIcon::before {
+.youtubeIcon:before {
   content: "\f167";
 }
 
-.closeIcon::before {
+.closeIcon:before {
   content: "\f410";
 }
 
 body {
   .navItemContainer {
-    .menuIcon::before {
+    .menuIcon:before {
       content: "\f805";
       font-weight: 900;
     }
   }
   &.openMenu {
     .navItemContainer {
-      .menuIcon::before {
+      .menuIcon:before {
         content: "\f410";
       }
     }
