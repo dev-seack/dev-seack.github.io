@@ -23,6 +23,10 @@ body {
     background: $light;
     color: $dark !important;
   }
+  &.dark {
+    background: $dark;
+    color: $light;
+  }
 }
 
 a,

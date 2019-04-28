@@ -246,6 +246,10 @@ body.light {
   background: #ffffff;
   color: #333333 !important;
 }
+body.dark {
+  background: #333333;
+  color: #ffffff;
+}
 
 a,
 a:hover,
@@ -380,6 +384,8 @@ nav {
   z-index: 100;
   width: 100%;
   padding: 0 1rem;
+  top: 0;
+  left: 0;
 }
 @media screen and (min-width: 700px) {
   nav {
@@ -1441,6 +1447,152 @@ footer .bottom .rights {
   #sideHustle .heading {
     font-size: 102px;
   }
+}
+
+nav.homeNavContainer.dark .navLogo {
+  background: #ffda48;
+}
+nav.homeNavContainer.dark .navItemContainer .navItem:hover {
+  color: #ffda48;
+}
+
+nav.mobileMenu.dark {
+  background: #333333;
+}
+
+#ContactContentContainer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 165px;
+}
+@media screen and (min-width: 1000px) {
+  #ContactContentContainer {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  #contactFormContainer {
+    width: 60%;
+  }
+}
+#contactFormContainer .heading {
+  color: #ffda48;
+  font-size: 42px;
+  text-transform: initial;
+  font-weight: 600;
+}
+@media screen and (min-width: 700px) {
+  #contactFormContainer .heading {
+    font-size: 52px;
+  }
+}
+#contactFormContainer .contactForm {
+  margin-top: 2rem;
+}
+#contactFormContainer .contactForm .inputGroup {
+  position: relative;
+  margin-bottom: 0.5rem;
+}
+#contactFormContainer .contactForm .inputGroup input,
+#contactFormContainer .contactForm .inputGroup textarea {
+  padding: 1rem;
+  width: 100%;
+  border-radius: 5px;
+  border: none;
+}
+#contactFormContainer .contactForm .inputGroup label {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  color: #333333;
+}
+#contactFormContainer .contactForm .inputGroup .primaryButton {
+  margin-top: 1rem;
+  background: #ffda48;
+  color: #ffffff;
+  width: 100%;
+}
+#contactFormContainer .contactForm .inputGroup .primaryButton:hover:after, #contactFormContainer .contactForm .inputGroup .primaryButton:hover:before {
+  background: #333333;
+}
+
+#DirectContact {
+  margin-top: 5rem;
+}
+@media screen and (min-width: 1000px) {
+  #DirectContact {
+    width: 40%;
+  }
+}
+#DirectContact .content {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  padding-top: 5rem;
+}
+@media screen and (min-width: 900px) {
+  #DirectContact .content {
+    padding-top: 0;
+  }
+}
+#DirectContact .content .innerContent .heading {
+  color: #ffda48;
+  font-size: 42px;
+  font-weight: 600;
+}
+@media screen and (min-width: 900px) {
+  #DirectContact .content .innerContent .heading {
+    font-size: 52px;
+  }
+}
+#DirectContact .content .contactData {
+  margin-top: 3rem;
+}
+#DirectContact .content .contactData .subheading {
+  color: #ffda48;
+  font-size: 1rem;
+  margin-bottom: 5px;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+#DirectContact .content .contactData .heading {
+  font-size: 1.5rem;
+  margin-bottom: 2.5rem;
+  letter-spacing: 1px;
+  color: #ffffff;
+}
+
+footer.dark {
+  background: #333333;
+  color: #ffffff !important;
+  margin-top: 5rem;
+}
+@media screen and (min-width: 900px) {
+  footer.dark {
+    margin-top: 100px;
+  }
+}
+footer.dark .content {
+  padding: 0;
+}
+footer.dark .content .innerContent .heading {
+  color: #ffda48;
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 4rem;
+}
+footer.dark .content .innerContent .contactData .contactDataItem .heading {
+  color: #ffffff;
+}
+footer.dark .bottom {
+  margin-top: 0;
+}
+footer.dark .bottom .rights {
+  background: #ffda48;
 }
 
 .icon {
