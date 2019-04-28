@@ -1,0 +1,150 @@
+nav.homeNavContainer.dark {
+  .navLogo {
+    background: $main;
+  }
+  .navItemContainer {
+    .navItem {
+      &:hover {
+        color: $main;
+      }
+    }
+  }
+}
+
+nav.mobileMenu.dark {
+  background: $dark;
+}
+
+#ContactContentContainer {
+  display: flex;
+  flex-direction: column;
+  margin-top: $navHeight + 50px;
+  @media screen and (min-width: 1000px) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+}
+
+#contactFormContainer {
+  @media screen and (min-width: 1000px) {
+    width: 60%;
+  }
+  .heading {
+    color: $main;
+    font-size: 42px;
+    text-transform: initial;
+    font-weight: 600;
+    @media screen and (min-width: 700px) {
+      font-size: 52px;
+    }
+  }
+  .contactForm {
+    margin-top: $borderMobile * 2;
+    .inputGroup {
+      position: relative;
+      margin-bottom: $borderMobile/2;
+      input,
+      textarea {
+        padding: 1rem;
+        width: 100%;
+        border-radius: 5px;
+        border: none;
+      }
+      label {
+        position: absolute;
+        top: 1rem;
+        left: 1rem;
+        color: $dark;
+      }
+      .primaryButton {
+        margin-top: $borderMobile;
+        background: $main;
+        color: $light;
+        width: 100%;
+        &:hover {
+          &:after,
+          &:before {
+            background: $dark;
+          }
+        }
+      }
+    }
+  }
+}
+
+#DirectContact {
+  margin-top: 5rem;
+  @media screen and (min-width: 1000px) {
+    width: 40%;
+  }
+  .content {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 5rem;
+    @media screen and (min-width: 900px) {
+      padding-top: 0;
+    }
+    .innerContent {
+      .heading {
+        color: $main;
+        font-size: 42px;
+        font-weight: 600;
+        @media screen and (min-width: 900px) {
+          font-size: 52px;
+        }
+      }
+    }
+    .contactData {
+      margin-top: 3rem;
+      .subheading {
+        color: $main;
+        font-size: 1rem;
+        margin-bottom: 5px;
+        letter-spacing: 0;
+        text-transform: uppercase;
+      }
+      .heading {
+        font-size: 1.5rem;
+        margin-bottom: 2.5rem;
+        letter-spacing: 1px;
+        color: $light;
+      }
+    }
+  }
+}
+
+footer.dark {
+  background: $dark;
+  color: $light !important;
+  margin-top: 5rem;
+  @media screen and (min-width: 900px) {
+    margin-top: 100px;
+  }
+  .content {
+    padding: 0;
+    .innerContent {
+      .heading {
+        color: $main;
+        font-size: 32px;
+        font-weight: 600;
+        margin-bottom: 4rem;
+      }
+      .contactData {
+        .contactDataItem {
+          .heading {
+            color: $light;
+          }
+        }
+      }
+    }
+  }
+  .bottom {
+    margin-top: 0;
+    .rights {
+      background: $main;
+    }
+  }
+}

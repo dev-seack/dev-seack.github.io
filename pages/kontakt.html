@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="https://use.typekit.net/sdp7lpt.css" />
+    <link rel="stylesheet" href="../style/all.css" />
+    <title>Legarti - Startseite</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body class="dark">
+    <nav class="homeNavContainer dark">
+      <a href="/" class="navLogo">
+        <div>
+          <img
+            src="../assets/logo.png"
+            alt="Legarti UG Logo, Kaligraphi Logo, Letter Logo"
+          />
+        </div>
+      </a>
+      <div class="navItemContainer">
+        <a href="/" class="navItem "><span>Startseite</span></a>
+        <a href="./projekte.html" class="navItem"><span>Projekt</span></a>
+        <a href="./wir.html" class="navItem active"><span>Wir</span></a>
+        <a href="./kontakt.html" class="navItem"><span>Kontakt</span></a>
+        <div id="mobileMenuToggle" class="mobileMenuToggle icon menuIcon"></div>
+      </div>
+    </nav>
+    <nav class="mobileMenu dark">
+      <div class="mobileMenuItemContainer">
+        <a href="/" class="navItem active"><span>Startseite</span></a>
+        <a href="./projekte.html" class="navItem"><span>Projekt</span></a>
+        <a href="./wir.html" class="navItem"><span>Wir</span></a>
+        <a href="./kontakt.html" class="navItem"><span>Kontakt</span></a>
+        <div class="sayhello">
+          <p class="subheading">Sag Hallo</p>
+          <p class="text">info@legarti.de</p>
+        </div>
+      </div>
+    </nav>
+    <!-- MAIN -->
+    <main>
+      <div id="ContactContentContainer">
+        <!-- CONTACT FORM -->
+        <section id="contactFormContainer" class="fullContainer">
+          <h2 class="heading">Was wollen Wir zusammen machen?</h2>
+          <form action="" class="contactForm">
+            <div class="inputGroup">
+              <input type="text" name="name" id="name" />
+              <label for="name">Wie heißt Du?</label>
+            </div>
+            <div class="inputGroup">
+              <input type="text" name="contactWay" id="contactWay" />
+              <label for="contactWay">wie können wir Dich erreichen?</label>
+            </div>
+            <div class="inputGroup">
+              <textarea
+                name="message"
+                id="message"
+                cols="30"
+                rows="13"
+              ></textarea>
+              <label for="message"
+                >Erzähl uns ein bisschen über dein Projekt, dein Budget und
+                deinen Zeitraum.</label
+              >
+            </div>
+            <div class="inputGroup">
+              <button type="submit" class="primaryButton">Absenden</button>
+            </div>
+          </form>
+        </section>
+        <!-- Direct Contact -->
+        <section id="DirectContact" class="fullContainer">
+          <div class="content">
+            <div class="innerContent">
+              <h3 class="heading">Du kannst uns auch direkt etwas fragen.</h3>
+              <div class="contactData">
+                <div class="contactDataItem">
+                  <p class="subheading">Webseiten/Graphic Design</p>
+                  <p class="heading">ms@legarti.de</p>
+                </div>
+                <div class="contactDataItem">
+                  <p class="subheading">Branding/Content</p>
+                  <p class="heading">rt@legarti.de</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <!-- Footer -->
+      <footer class="fullContainer dark">
+        <div class="bottom">
+          <p class="copyright">
+            Legarti UG (haftungsbeschränkt) | Copyright 2019
+          </p>
+          <p class="social">
+            <a href="" class="heroSocialItem icon brand facebookIcon"></a>
+            <a href="" class="heroSocialItem icon brand instagramIcon"></a>
+            <a href="" class="heroSocialItem icon brand youtubeIcon"></a>
+          </p>
+          <p class="withLove">
+            Made with <i class="fas fa-heart"></i> and
+            <i class="fas fa-smile"></i> in Germany.
+          </p>
+          <p class="rights negativeContainer">
+            <span><a href="">Datenschutzerklärung</a></span>
+            <span><a href=""> | Impressum</a></span>
+          </p>
+        </div>
+      </footer>
+    </main>
+
+    <!-- Scripts -->
+    <script
+      src="https://code.jquery.com/jquery-3.4.0.slim.min.js"
+      integrity="sha256-ZaXnYkHGqIhqTbJ6MB4l9Frs/r7U4jlx7ir8PJYBqbI="
+      crossorigin="anonymous"
+    ></script>
+    <script src="../scripts/bodyScrollLock.min.js"></script>
+    <script src="../functions.js"></script>
+  </body>
+</html>
