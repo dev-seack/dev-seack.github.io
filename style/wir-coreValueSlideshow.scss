@@ -1,8 +1,14 @@
 #coreValueSlideshow {
-  background: url("../assets/wir/coreValue/background3.jpg") center center
+  -webkit-transform: translatez(0);
+  -moz-transform: translatez(0);
+  -ms-transform: translatez(0);
+  -o-transform: translatez(0);
+  transform: translatez(0);
+  background: url("../assets/wir/coreValue/background1.jpg") center center
     no-repeat;
   background-size: cover;
   margin-top: 5rem;
+  transition: background-image 0.5s ease;
   @media screen and (min-width: 900px) {
     display: flex;
     flex-direction: column;
@@ -12,6 +18,11 @@
     min-height: 750px;
   }
   .bigNumber {
+    -webkit-transform: translatez(0);
+    -moz-transform: translatez(0);
+    -ms-transform: translatez(0);
+    -o-transform: translatez(0);
+    transform: translatez(0);
     color: $accent;
     font-size: 40vw;
     font-weight: 600;
@@ -43,10 +54,16 @@
       margin-bottom: 3rem;
     }
     @media screen and (min-width: 1200px) {
-      width: 80%;
+      width: 50%;
       margin-bottom: 0;
     }
     .ourValues {
+      -webkit-transform: translatez(0);
+      -moz-transform: translatez(0);
+      -ms-transform: translatez(0);
+      -o-transform: translatez(0);
+      transform: translatez(0);
+      position: relative;
       text-transform: uppercase;
       font-weight: 600;
       font-size: 0.85rem;
@@ -58,6 +75,12 @@
       }
     }
     .value {
+      -webkit-transform: translatez(0);
+      -moz-transform: translatez(0);
+      -ms-transform: translatez(0);
+      -o-transform: translatez(0);
+      transform: translatez(0);
+      position: relative;
       margin-top: 0.5rem;
       margin-bottom: 1rem;
       font-weight: 600;
@@ -88,4 +111,18 @@
       font-size: 4rem;
     }
   }
+}
+
+.absolute-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  -webkit-transform: translatez(0);
+  -moz-transform: translatez(0);
+  -ms-transform: translatez(0);
+  -o-transform: translatez(0);
+  transform: translatez(0);
 }
