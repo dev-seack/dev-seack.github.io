@@ -13,6 +13,11 @@ if (typeof jQuery.when.all === 'undefined') {
 }
 
 (function($) {
+    function preloadImage(url)
+    {
+        var img=new Image();
+        img.src=url;
+    }
 
     $.fn.legSlideshow = function( options ) {
         var settings = $.extend({
@@ -88,7 +93,7 @@ if (typeof jQuery.when.all === 'undefined') {
             // load all images nao
             $.each( settings.slides, function( key, value ) {
                 if (typeof value.background == 'string') {
-                    document.createElement('img').src = value.background;
+                    preloadImage(value.background);
                 }
             });
 
