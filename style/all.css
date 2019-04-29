@@ -224,6 +224,7 @@ h2 {
 
 * {
   box-sizing: border-box;
+  outline: none;
 }
 
 img {
@@ -235,7 +236,7 @@ body {
   background: #ffda48;
   color: #ffffff;
   overflow-x: hidden;
-  font-family: futura-pt, sans-serif;
+  font-family: "futura-pt", "futura-pt-bold", "futura-pt-condensed", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
@@ -675,7 +676,7 @@ nav .navItemContainer .navItem:hover {
 }
 .landingShowcase .landingShowcaseText .bigNumber {
   font-size: 300px;
-  font-weight: 600;
+  font-weight: 700;
   position: relative;
 }
 .landingShowcase .landingShowcaseText .subheading {
@@ -869,6 +870,7 @@ footer .content .contactData .heading {
   font-size: 1.5rem;
   margin-bottom: 2.5rem;
   letter-spacing: 1px;
+  font-weight: 700;
 }
 footer .logo {
   display: none;
@@ -1173,7 +1175,7 @@ footer .bottom .rights {
 }
 #teamFotoContainer .teamFoto {
   border-radius: 5px;
-  box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.15);
   margin-bottom: 1rem;
 }
 #teamFotoContainer .socialMediaContainer {
@@ -1286,6 +1288,7 @@ footer .bottom .rights {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.15);
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1305,6 +1308,7 @@ footer .bottom .rights {
   position: relative;
   left: -1rem;
   top: -70px;
+  text-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 @media screen and (min-width: 700px) {
   #coreValueSlideshow .bigNumber {
@@ -1396,6 +1400,9 @@ footer .bottom .rights {
   font-size: 40px;
   position: relative;
   top: 50px;
+}
+#coreValueSlideshow .arrows .right-arrow,
+#coreValueSlideshow .arrows .left-arrow {
   cursor: pointer;
 }
 @media screen and (min-width: 900px) {
@@ -1425,7 +1432,8 @@ footer .bottom .rights {
 }
 
 #sideHustle {
-  margin-top: 200px;
+  max-width: 1400px;
+  margin: 250px auto 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1467,6 +1475,13 @@ footer .bottom .rights {
   padding: 0 1rem;
   z-index: 99;
   text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.35);
+}
+@media screen and (min-width: 700px) {
+  #sideHustle .heading {
+    font-size: 52px;
+    margin-left: -70px;
+    padding: 0 70px;
+  }
 }
 @media screen and (min-width: 900px) {
   #sideHustle .heading {
@@ -1518,12 +1533,21 @@ nav.mobileMenu.dark {
 #contactFormContainer .heading {
   color: #ffda48;
   font-size: 42px;
+  line-height: 40px;
   text-transform: initial;
-  font-weight: 600;
+  font-weight: 700;
+  margin-bottom: 4rem;
 }
 @media screen and (min-width: 700px) {
   #contactFormContainer .heading {
     font-size: 52px;
+    line-height: 45px;
+  }
+}
+@media screen and (min-width: 900px) {
+  #contactFormContainer .heading {
+    font-size: 62px;
+    line-height: 55px;
   }
 }
 #contactFormContainer .contactForm {
@@ -1531,7 +1555,23 @@ nav.mobileMenu.dark {
 }
 #contactFormContainer .contactForm .inputGroup {
   position: relative;
-  margin-bottom: 0.5rem;
+  margin-bottom: 2rem;
+  margin-top: 1.5rem;
+}
+#contactFormContainer .contactForm .inputGroup:after {
+  content: attr(data-label);
+  position: absolute;
+  display: block;
+  top: -1.25rem;
+  left: 1rem;
+  color: #ffda48;
+  font-size: 0.85rem;
+  opacity: 0;
+  transition: opacity 300ms;
+}
+#contactFormContainer .contactForm .inputGroup.focus:after {
+  opacity: 1;
+  transition: opacity 300ms;
 }
 #contactFormContainer .contactForm .inputGroup input,
 #contactFormContainer .contactForm .inputGroup textarea {
@@ -1539,12 +1579,14 @@ nav.mobileMenu.dark {
   width: 100%;
   border-radius: 5px;
   border: none;
+  transition: box-shadow 300ms;
+  font-size: 1.25rem;
 }
-#contactFormContainer .contactForm .inputGroup label {
-  position: absolute;
-  top: 1rem;
-  left: 1rem;
-  color: #333333;
+#contactFormContainer .contactForm .inputGroup input:focus, #contactFormContainer .contactForm .inputGroup input:focus,
+#contactFormContainer .contactForm .inputGroup textarea:focus,
+#contactFormContainer .contactForm .inputGroup textarea:focus {
+  box-shadow: 0 0 0px 3px inset #ffda48;
+  transition: box-shadow 300ms;
 }
 #contactFormContainer .contactForm .inputGroup .primaryButton {
   margin-top: 1rem;
@@ -1580,10 +1622,18 @@ nav.mobileMenu.dark {
   color: #ffda48;
   font-size: 42px;
   font-weight: 600;
+  line-height: 40px;
+}
+@media screen and (min-width: 700px) {
+  #DirectContact .content .innerContent .heading {
+    font-size: 52px;
+    line-height: 45px;
+  }
 }
 @media screen and (min-width: 900px) {
   #DirectContact .content .innerContent .heading {
-    font-size: 52px;
+    font-size: 62px;
+    line-height: 55px;
   }
 }
 #DirectContact .content .contactData {
@@ -1598,9 +1648,11 @@ nav.mobileMenu.dark {
 }
 #DirectContact .content .contactData .heading {
   font-size: 1.5rem;
+  line-height: 1.5rem;
   margin-bottom: 2.5rem;
   letter-spacing: 1px;
   color: #ffffff;
+  font-weight: 700;
 }
 
 footer.dark {

@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  outline: none;
 }
 
 img {
@@ -11,7 +12,7 @@ body {
   background: $main;
   color: $light;
   overflow-x: hidden;
-  font-family: futura-pt, sans-serif;
+  font-family: "futura-pt", "futura-pt-bold", "futura-pt-condensed", sans-serif;
   font-weight: 400;
   font-style: normal;
 

@@ -38,4 +38,19 @@ $(document).ready(() => {
       document.querySelector('.showcase .popup[data-popup="' + popupName + '"]')
     );
   });
+
+  // Contactform - Focus detection
+  $(".inputGroup input, .inputGroup textarea").keyup(function() {
+    if ($(this).val().length > 0) {
+      $(this)
+        .parent()
+        .addClass("focus");
+      console.log($(this).val().length);
+    } else {
+      $(this)
+        .parent()
+        .removeClass("focus");
+      console.log("0");
+    }
+  });
 });

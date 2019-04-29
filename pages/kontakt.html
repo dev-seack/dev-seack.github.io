@@ -27,8 +27,8 @@
       <div class="navItemContainer">
         <a href="/" class="navItem "><span>Startseite</span></a>
         <a href="./projekte.html" class="navItem"><span>Projekt</span></a>
-        <a href="./wir.html" class="navItem active"><span>Wir</span></a>
-        <a href="./kontakt.html" class="navItem"><span>Kontakt</span></a>
+        <a href="./wir.html" class="navItem "><span>Wir</span></a>
+        <a href="./kontakt.html" class="navItem active"><span>Kontakt</span></a>
         <div id="mobileMenuToggle" class="mobileMenuToggle icon menuIcon"></div>
       </div>
     </nav>
@@ -50,26 +50,41 @@
         <!-- CONTACT FORM -->
         <section id="contactFormContainer" class="fullContainer">
           <h2 class="heading">Was wollen Wir zusammen machen?</h2>
-          <form action="" class="contactForm">
-            <div class="inputGroup">
-              <input type="text" name="name" id="name" />
-              <label for="name">Wie heißt Du?</label>
+          <form
+            action="https://formspree.io/info@legarti.de"
+            method="POST"
+            class="contactForm"
+          >
+            <div class="inputGroup" id="name" data-label="Wie heißt Du?">
+              <input
+                type="text"
+                name="Ansprechpartner"
+                placeholder="Wie heißt Du?"
+              />
             </div>
-            <div class="inputGroup">
-              <input type="text" name="contactWay" id="contactWay" />
-              <label for="contactWay">wie können wir Dich erreichen?</label>
+            <div
+              class="inputGroup"
+              data-label="Wie können wir Dich erreichen?"
+              id="contactWay"
+            >
+              <input
+                type="text"
+                name="Kontaktinformationen"
+                placeholder="Wie können wir Dich erreichen?"
+              />
             </div>
-            <div class="inputGroup">
+            <div
+              id="message"
+              class="inputGroup"
+              data-label="Erzähl uns ein bisschen über dein Projekt, dein Budget und
+            deinen Zeitraum."
+            >
               <textarea
-                name="message"
-                id="message"
+                name="Nachricht"
                 cols="30"
                 rows="13"
+                placeholder="Erzähl uns ein bisschen über dein Projekt, dein Budget und deinen Zeitraum."
               ></textarea>
-              <label for="message"
-                >Erzähl uns ein bisschen über dein Projekt, dein Budget und
-                deinen Zeitraum.</label
-              >
             </div>
             <div class="inputGroup">
               <button type="submit" class="primaryButton">Absenden</button>

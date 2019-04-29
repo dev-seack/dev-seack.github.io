@@ -33,29 +33,55 @@ nav.mobileMenu.dark {
   .heading {
     color: $main;
     font-size: 42px;
+    line-height: 40px;
     text-transform: initial;
-    font-weight: 600;
+    font-weight: 700;
+    margin-bottom: 4rem;
     @media screen and (min-width: 700px) {
       font-size: 52px;
+      line-height: 45px;
+    }
+    @media screen and (min-width: 900px) {
+      font-size: 62px;
+      line-height: 55px;
     }
   }
   .contactForm {
     margin-top: $borderMobile * 2;
     .inputGroup {
       position: relative;
-      margin-bottom: $borderMobile/2;
+      margin-bottom: 2rem;
+      margin-top: 1.5rem;
+      &:after {
+        content: attr(data-label);
+        position: absolute;
+        display: block;
+        top: -1.25rem;
+        left: 1rem;
+        color: $main;
+        font-size: 0.85rem;
+        opacity: 0;
+        transition: opacity 300ms;
+      }
+      &.focus:after {
+        opacity: 1;
+        transition: opacity 300ms;
+      }
+
       input,
       textarea {
         padding: 1rem;
         width: 100%;
         border-radius: 5px;
         border: none;
-      }
-      label {
-        position: absolute;
-        top: 1rem;
-        left: 1rem;
-        color: $dark;
+        transition: box-shadow 300ms;
+        font-size: 1.25rem;
+
+        &:focus,
+        &:focus {
+          box-shadow: 0 0 0px 3px inset $main;
+          transition: box-shadow 300ms;
+        }
       }
       .primaryButton {
         margin-top: $borderMobile;
@@ -92,8 +118,14 @@ nav.mobileMenu.dark {
         color: $main;
         font-size: 42px;
         font-weight: 600;
-        @media screen and (min-width: 900px) {
+        line-height: 40px;
+        @media screen and (min-width: 700px) {
           font-size: 52px;
+          line-height: 45px;
+        }
+        @media screen and (min-width: 900px) {
+          font-size: 62px;
+          line-height: 55px;
         }
       }
     }
@@ -108,9 +140,11 @@ nav.mobileMenu.dark {
       }
       .heading {
         font-size: 1.5rem;
+        line-height: 1.5rem;
         margin-bottom: 2.5rem;
         letter-spacing: 1px;
         color: $light;
+        font-weight: 700;
       }
     }
   }
