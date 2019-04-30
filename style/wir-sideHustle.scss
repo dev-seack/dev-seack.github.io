@@ -1,11 +1,14 @@
 #sideHustle {
   max-width: 1400px;
-  margin: 250px auto 0 auto;
+  margin: 200px auto 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   position: relative;
   z-index: $mainIndex - 1;
+  @media screen and (min-width: 900px) {
+    margin: 250px auto 500px auto;
+  }
   .imageContainer {
     position: relative;
     z-index: $navIndex - 2;
