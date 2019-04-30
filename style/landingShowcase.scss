@@ -31,6 +31,9 @@
       top: -60px;
       font-size: 42px;
       font-weight: 600;
+      @media screen and (min-width: 900px) {
+        font-size: 52px;
+      }
     }
   }
   .landingShowcaseImage {
@@ -43,6 +46,10 @@
 
 .landingShowcase.left {
   justify-content: flex-start;
+  .imageContainer {
+    order: 2;
+    width: 100%;
+  }
   .landingShowcaseText {
     order: 1;
     padding-left: $borderMobile;

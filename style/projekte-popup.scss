@@ -19,6 +19,7 @@
   bottom: 0;
   z-index: $navIndex + 1;
   overflow: scroll;
+  -webkit-overflow-scrolling: touch;
   padding-bottom: $borderMobile * 2;
   @media screen and (min-width: 900px) {
     padding: 0;

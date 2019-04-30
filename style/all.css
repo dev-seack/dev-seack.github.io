@@ -326,6 +326,12 @@ button:hover {
   margin: 0;
 }
 
+@media (max-width: 699px) {
+  .rellax {
+    transform: translate3d(0, 0, 0) !important;
+  }
+}
+
 .mobileMenu {
   position: fixed;
   transition: left 350ms;
@@ -692,6 +698,11 @@ nav .navItemContainer .navItem:hover {
   font-size: 42px;
   font-weight: 600;
 }
+@media screen and (min-width: 900px) {
+  .landingShowcase .landingShowcaseText .heading {
+    font-size: 52px;
+  }
+}
 .landingShowcase .landingShowcaseImage {
   padding: 0 1rem;
 }
@@ -703,6 +714,10 @@ nav .navItemContainer .navItem:hover {
 
 .landingShowcase.left {
   justify-content: flex-start;
+}
+.landingShowcase.left .imageContainer {
+  order: 2;
+  width: 100%;
 }
 .landingShowcase.left .landingShowcaseText {
   order: 1;
@@ -1073,6 +1088,7 @@ footer .bottom .rights {
   bottom: 0;
   z-index: 101;
   overflow: scroll;
+  -webkit-overflow-scrolling: touch;
   padding-bottom: 2rem;
 }
 @media screen and (min-width: 900px) {
