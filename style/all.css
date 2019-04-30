@@ -1700,6 +1700,51 @@ footer.dark .bottom .rights {
   background: #ffda48;
 }
 
+.datenschutz .container,
+.impressum .container {
+  padding-top: 230px;
+}
+.datenschutz .container .heading,
+.impressum .container .heading {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 3rem;
+}
+.datenschutz .container h2,
+.impressum .container h2 {
+  font-size: 21px;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  margin-top: 2rem;
+}
+.datenschutz .container h3,
+.impressum .container h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+.datenschutz .container p,
+.impressum .container p {
+  text-align: justify;
+  font-size: 1.1rem;
+  line-height: 1.25rem;
+}
+.datenschutz .container p:last-child,
+.impressum .container p:last-child {
+  margin-top: 2rem;
+}
+@media screen and (min-width: 700px) {
+  .datenschutz .container p,
+.impressum .container p {
+    text-align: left;
+  }
+}
+.datenschutz .container p a,
+.impressum .container p a {
+  color: #333333;
+}
+
 .icon {
   font-family: "Font Awesome 5 Free";
   font-weight: 100;
