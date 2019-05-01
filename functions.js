@@ -45,12 +45,10 @@ $(document).ready(() => {
       $(this)
         .parent()
         .addClass("focus");
-      console.log($(this).val().length);
     } else {
       $(this)
         .parent()
         .removeClass("focus");
-      console.log("0");
     }
   });
 });

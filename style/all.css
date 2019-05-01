@@ -962,6 +962,12 @@ footer .bottom .rights {
   margin-top: 250px;
 }
 @media screen and (min-width: 900px) {
+  .showcase {
+    margin: 250px auto 0 auto;
+    max-width: 1920px;
+  }
+}
+@media screen and (min-width: 900px) {
   .showcase.right .textContent {
     margin-left: auto;
     margin-right: 0;
