@@ -542,6 +542,12 @@ nav .navItemContainer .navItem:hover {
     padding: 50px 0;
   }
 }
+.quote .quoteAuthor {
+  text-align: center;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-weight: 400;
+}
 
 .hero {
   margin-top: 0 !important;
