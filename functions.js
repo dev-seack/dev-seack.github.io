@@ -30,12 +30,16 @@ $(document).ready(() => {
     $(".popup").removeClass("active");
     bodyScrollLock.clearAllBodyScrollLocks();
   });
-  $(".showcase .textContent .showMore").on("click", function() {
+  $(".showcaseContainer .showcase").on("click", function() {
     let popupName = $(this).data("targetpopup");
-    const popupElement = $('.showcase .popup*[data-popup="' + popupName + '"]');
+    const popupElement = $(
+      '.showcaseContainer .popup*[data-popup="' + popupName + '"]'
+    );
     popupElement.addClass("active");
     bodyScrollLock.disableBodyScroll(
-      document.querySelector('.showcase .popup[data-popup="' + popupName + '"]')
+      document.querySelector(
+        '.showcaseContainer .popup[data-popup="' + popupName + '"]'
+      )
     );
   });
 

@@ -1,8 +1,8 @@
-.showcase .popup {
+.showcaseContainer .popup {
   display: none;
   opacity: 0;
 }
-.showcase .popup.active {
+.showcaseContainer .popup.active {
   display: flex;
   opacity: 1;
   flex-direction: column;

@@ -543,6 +543,7 @@ nav .navItemContainer .navItem:hover {
   }
 }
 .quote .quoteAuthor {
+  color: #ccc;
   text-align: center;
   font-size: 1.5rem;
   text-transform: uppercase;
@@ -964,129 +965,216 @@ footer .bottom .rights {
   }
 }
 
-.showcase {
+.showcaseContainer {
   margin-top: 250px;
 }
 @media screen and (min-width: 900px) {
-  .showcase {
+  .showcaseContainer {
     margin: 250px auto 0 auto;
-    max-width: 1920px;
+    max-width: 1420px;
   }
 }
-@media screen and (min-width: 900px) {
-  .showcase.right .textContent {
-    margin-left: auto;
-    margin-right: 0;
-  }
-}
-@media screen and (min-width: 900px) {
-  .showcase.left .imageContent .imageGroup {
-    order: 2;
-  }
-  .showcase.left .imageContent .big {
-    order: 1;
-  }
-}
-@media screen and (min-width: 900px) {
-  .showcase.left .textContent {
-    margin-right: auto;
-    margin-left: 0;
-  }
-}
-.showcase .imageContent {
+.showcaseContainer .showcase {
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  width: 100%;
-  margin-bottom: 3rem;
-}
-@media screen and (min-width: 900px) {
-  .showcase .imageContent {
-    flex-wrap: nowrap;
-  }
-}
-.showcase .imageContent img {
-  position: relative;
+  flex-direction: row;
+  justify-content: space-between;
   box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+  transition: transform 300ms;
+  transform: scale(1);
 }
-.showcase .imageContent .imageGroup {
+.showcaseContainer .showcase:hover {
+  transition: transform 300ms;
+  transform: scale(0.975);
+  cursor: pointer;
+}
+.showcaseContainer .showcase .bgShowcase {
   width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
+  position: absolute;
+  height: 100%;
 }
-@media screen and (min-width: 900px) {
-  .showcase .imageContent .imageGroup {
+@media screen and (min-width: 1000px) {
+  .showcaseContainer .showcase .bgShowcase {
+    position: relative;
+    height: auto;
     width: 50%;
   }
 }
-.showcase .imageContent .imageGroup .small {
-  width: 50%;
-  z-index: 1;
-}
-.showcase .imageContent .imageGroup .medium {
-  z-index: 2;
+.showcaseContainer .showcase .showcaseInformation {
   width: 100%;
+  padding: 1rem;
+  position: relative;
+  z-index: 10;
 }
-.showcase .imageContent .big {
-  z-index: 3;
+@media screen and (min-width: 1000px) {
+  .showcaseContainer .showcase .showcaseInformation {
+    width: 50%;
+    padding: 2rem;
+  }
+}
+.showcaseContainer .showcase .showcaseInformation .logo {
+  width: 120px;
+  margin-bottom: 125px;
+}
+.showcaseContainer .showcase .showcaseInformation .statement {
+  margin-bottom: 125px;
+  font-size: 1.85rem;
   width: 100%;
-}
-@media screen and (min-width: 900px) {
-  .showcase .imageContent .big {
-    width: 65%;
-  }
-}
-@media screen and (min-width: 900px) {
-  .showcase .textContent {
-    width: 60%;
-    background: #ffffff;
-    box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.15);
-    border-radius: 7px;
-    padding: 3rem 2rem;
-    position: relative;
-    top: -75px;
-    z-index: 50;
-  }
-  .showcase .textContent:before {
-    content: "";
-    width: 50px;
-    height: 50px;
-    background: #ffffff;
-    display: inline-block;
-    position: absolute;
-    right: 15%;
-    top: -25px;
-    transform: rotate(45deg);
-  }
-}
-.showcase .textContent .heading {
+  text-align: center;
+  padding: 0 1rem;
   font-weight: 600;
-  font-size: 42px;
-  margin-bottom: 10px;
 }
-.showcase .textContent .shortDescription {
+.showcaseContainer .showcase .showcaseInformation .showcaseHeading {
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-bottom: 10px;
+  font-size: 0.9rem;
+}
+.showcaseContainer .showcase .showcaseInformation .showcaseTasks {
+  font-size: 1rem;
   font-weight: 300;
-  font-size: 1.1rem;
-  line-height: 1.25rem;
-  margin-bottom: 2rem;
 }
-.showcase .textContent .tasksHeading {
-  font-size: 1.35rem;
-  font-weight: 600;
-  margin-bottom: 10px;
+.showcaseContainer .showcase#ucs {
+  color: #ffffff;
 }
-.showcase .secondaryButton {
-  margin-top: 3.5rem;
-  margin-left: 0;
+.showcaseContainer .showcase#ucs .showcaseInformation {
+  background: rgba(1, 1, 1, 0.7);
+}
+@media screen and (min-width: 1000px) {
+  .showcaseContainer .showcase#ucs .showcaseInformation {
+    background: #111111;
+  }
+}
+.showcaseContainer .showcase#ucs .bgShowcase {
+  background: url("../assets/projekte/ucs/showcase.jpg") center center no-repeat;
+  background-size: cover;
 }
 
-.showcase .popup {
+/*
+.showcase {
+  margin-top: 250px;
+  @media screen and (min-width: 900px) {
+    margin: 250px auto 0 auto;
+    max-width: 1920px;
+  }
+  &.right {
+    .textContent {
+      @media screen and (min-width: 900px) {
+        margin-left: auto;
+        margin-right: 0;
+      }
+    }
+  }
+  &.left {
+    .imageContent {
+      @media screen and (min-width: 900px) {
+        .imageGroup {
+          order: 2;
+        }
+        .big {
+          order: 1;
+        }
+      }
+    }
+    .textContent {
+      @media screen and (min-width: 900px) {
+        margin-right: auto;
+        margin-left: 0;
+      }
+    }
+  }
+  .imageContent {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 3rem;
+    @media screen and (min-width: 900px) {
+      flex-wrap: nowrap;
+    }
+    img {
+      position: relative;
+      box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.15);
+    }
+    .imageGroup {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      @media screen and (min-width: 900px) {
+        width: 50%;
+      }
+      .small {
+        width: 50%;
+        z-index: 1;
+      }
+      .medium {
+        z-index: 2;
+        width: 100%;
+      }
+    }
+
+    .big {
+      z-index: 3;
+      width: 100%;
+      @media screen and (min-width: 900px) {
+        width: 65%;
+      }
+    }
+  }
+  .textContent {
+    @media screen and (min-width: 900px) {
+      width: 60%;
+      background: $light;
+      box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.15);
+      border-radius: 7px;
+      padding: 3rem 2rem;
+      position: relative;
+      top: -75px;
+      z-index: 50;
+      &:before {
+        content: "";
+        width: 50px;
+        height: 50px;
+        background: $light;
+
+        display: inline-block;
+        position: absolute;
+        right: 15%;
+        top: -25px;
+        transform: rotate(45deg);
+      }
+    }
+
+    .heading {
+      font-weight: 600;
+      font-size: 42px;
+      margin-bottom: 10px;
+    }
+    .shortDescription {
+      font-weight: 300;
+      font-size: 1.1rem;
+      line-height: 1.25rem;
+      margin-bottom: 2rem;
+    }
+    .tasksHeading {
+      font-size: 1.35rem;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+  }
+  .secondaryButton {
+    margin-top: 3.5rem;
+    margin-left: 0;
+  }
+}
+*/
+.showcaseContainer .popup {
   display: none;
   opacity: 0;
 }
 
-.showcase .popup.active {
+.showcaseContainer .popup.active {
   display: flex;
   opacity: 1;
   flex-direction: column;
@@ -1104,16 +1192,16 @@ footer .bottom .rights {
   padding-bottom: 2rem;
 }
 @media screen and (min-width: 900px) {
-  .showcase .popup.active {
+  .showcaseContainer .popup.active {
     flex-direction: row;
   }
 }
 @media screen and (min-width: 900px) {
-  .showcase .popup.active {
+  .showcaseContainer .popup.active {
     padding: 0;
   }
 }
-.showcase .popup.active .closeIcon {
+.showcaseContainer .popup.active .closeIcon {
   color: #333333;
   padding: 1rem;
   width: 100%;
@@ -1122,46 +1210,46 @@ footer .bottom .rights {
   font-size: 2em;
 }
 @media screen and (min-width: 900px) {
-  .showcase .popup.active .closeIcon {
+  .showcaseContainer .popup.active .closeIcon {
     position: absolute;
     top: 0;
     padding: 1rem;
   }
 }
-.showcase .popup.active .left {
+.showcaseContainer .popup.active .left {
   width: 100%;
 }
 @media screen and (min-width: 900px) {
-  .showcase .popup.active .left {
+  .showcaseContainer .popup.active .left {
     height: 100%;
     background: url("../assets/projekte/ucs/popup.jpg") top center no-repeat;
     background-size: cover;
   }
 }
 @media screen and (min-width: 900px) {
-  .showcase .popup.active .left img {
+  .showcaseContainer .popup.active .left img {
     display: none;
   }
 }
-.showcase .popup.active .left .taskDescription {
+.showcaseContainer .popup.active .left .taskDescription {
   margin-top: 3rem;
   margin-bottom: 0.5rem;
 }
-.showcase .popup.active .left .taskDescription h3 {
+.showcaseContainer .popup.active .left .taskDescription h3 {
   font-size: 1.35rem;
   font-weight: 600;
   margin-bottom: 5px;
 }
-.showcase .popup.active .left .taskDescription p {
+.showcaseContainer .popup.active .left .taskDescription p {
   font-weight: 300;
   font-size: 1.25rem;
   margin-bottom: 2.5rem;
 }
 @media screen and (min-width: 900px) {
-  .showcase .popup.active .left {
+  .showcaseContainer .popup.active .left {
     width: 45%;
   }
-  .showcase .popup.active .left .taskDescription {
+  .showcaseContainer .popup.active .left .taskDescription {
     position: absolute;
     left: 0;
     bottom: 0;
@@ -1169,25 +1257,25 @@ footer .bottom .rights {
     width: 45%;
   }
 }
-.showcase .popup.active .right {
+.showcaseContainer .popup.active .right {
   width: 100%;
 }
-.showcase .popup.active .right .projectDescription .heading {
+.showcaseContainer .popup.active .right .projectDescription .heading {
   font-weight: 600;
   font-size: 32px;
 }
-.showcase .popup.active .right .projectDescription .text {
+.showcaseContainer .popup.active .right .projectDescription .text {
   margin-top: 1rem;
   font-weight: 300;
   font-size: 1.1em;
   line-height: 1.2em;
   text-align: justify;
 }
-.showcase .popup.active .right .projectDescription .productLink {
+.showcaseContainer .popup.active .right .projectDescription .productLink {
   margin: 1rem auto 0 auto;
 }
 @media screen and (min-width: 900px) {
-  .showcase .popup.active .right {
+  .showcaseContainer .popup.active .right {
     width: 55%;
   }
 }
