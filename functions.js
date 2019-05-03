@@ -1,6 +1,16 @@
 $(document).ready(() => {
+  // SCROLL
   var lastScrollTop = window.pageYOffset || document.documentElement.scrollTop;
   $(window).scroll(() => {
+    clearTimeout($.data(this, "scrollTimer"));
+    $.data(
+      this,
+      "scrollTimer",
+      setTimeout(function() {
+        $(".navItemContainer").removeClass("scrolled");
+      }, 250)
+    );
+
     var st = window.pageYOffset || document.documentElement.scrollTop;
     if (st > lastScrollTop) {
       if ($(window).scrollTop() > 0) {

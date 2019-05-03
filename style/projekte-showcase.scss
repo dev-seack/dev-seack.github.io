@@ -10,9 +10,9 @@
     flex-direction: row;
     justify-content: space-between;
     box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.15);
-    border-radius: 5px;
     transition: transform 300ms;
     transform: scale(1);
+    margin-bottom: 4rem;
     &:hover {
       transition: transform 300ms;
       transform: scale(0.975);
@@ -22,10 +22,12 @@
       width: 100%;
       position: absolute;
       height: 100%;
+      border-radius: 5px;
       @media screen and (min-width: 1000px) {
         position: relative;
         height: auto;
         width: 50%;
+        border-radius: 0 5px 5px 0;
       }
     }
 
@@ -34,9 +36,11 @@
       padding: $borderMobile;
       position: relative;
       z-index: 10;
+      border-radius: 5px;
       @media screen and (min-width: 1000px) {
         width: 50%;
         padding: 2rem;
+        border-radius: 5px 0 0 5px;
       }
       .logo {
         width: 120px;
@@ -62,6 +66,8 @@
         font-weight: 300;
       }
     }
+    // showcases
+    //ucs
     &#ucs {
       .showcaseInformation {
         background: rgba(1, 1, 1, 0.7);
@@ -76,125 +82,54 @@
         background-size: cover;
       }
     }
-  }
-}
-
-/*
-.showcase {
-  margin-top: 250px;
-  @media screen and (min-width: 900px) {
-    margin: 250px auto 0 auto;
-    max-width: 1920px;
-  }
-  &.right {
-    .textContent {
-      @media screen and (min-width: 900px) {
-        margin-left: auto;
-        margin-right: 0;
-      }
-    }
-  }
-  &.left {
-    .imageContent {
-      @media screen and (min-width: 900px) {
-        .imageGroup {
-          order: 2;
-        }
-        .big {
-          order: 1;
+    //ad24
+    &#ad24 {
+      .showcaseInformation {
+        background: rgba(255, 255, 255, 0.7);
+        @media screen and (min-width: 1000px) {
+          background: #ffffff;
         }
       }
-    }
-    .textContent {
-      @media screen and (min-width: 900px) {
-        margin-right: auto;
-        margin-left: 0;
+      color: $dark;
+      .bgShowcase {
+        background: url("../assets/projekte/ad24/showcase.jpg") center center
+          no-repeat;
+        background-size: cover;
       }
     }
-  }
-  .imageContent {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    width: 100%;
-    margin-bottom: 3rem;
-    @media screen and (min-width: 900px) {
-      flex-wrap: nowrap;
-    }
-    img {
-      position: relative;
-      box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.15);
-    }
-    .imageGroup {
-      width: 100%;
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      @media screen and (min-width: 900px) {
-        width: 50%;
+    //tfa
+    &#tfa {
+      .showcaseInformation {
+        background: rgba(238, 114, 48, 0.7);
+        .logo {
+          height: 70px;
+          width: auto;
+        }
+        @media screen and (min-width: 1000px) {
+          background: #ee7230;
+        }
       }
-      .small {
-        width: 50%;
-        z-index: 1;
-      }
-      .medium {
-        z-index: 2;
-        width: 100%;
+      color: $light;
+      .bgShowcase {
+        background: url("../assets/projekte/tfa/showcase.jpg") center center
+          no-repeat;
+        background-size: cover;
       }
     }
-
-    .big {
-      z-index: 3;
-      width: 100%;
-      @media screen and (min-width: 900px) {
-        width: 65%;
+    //fl
+    &#fl {
+      .showcaseInformation {
+        background: rgba(0, 0, 0, 0.7);
+        @media screen and (min-width: 1000px) {
+          background: #000000;
+        }
+      }
+      color: $light;
+      .bgShowcase {
+        background: url("../assets/projekte/fl/showcase.webp") center center
+          no-repeat;
+        background-size: cover;
       }
     }
-  }
-  .textContent {
-    @media screen and (min-width: 900px) {
-      width: 60%;
-      background: $light;
-      box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.15);
-      border-radius: 7px;
-      padding: 3rem 2rem;
-      position: relative;
-      top: -75px;
-      z-index: 50;
-      &:before {
-        content: "";
-        width: 50px;
-        height: 50px;
-        background: $light;
-
-        display: inline-block;
-        position: absolute;
-        right: 15%;
-        top: -25px;
-        transform: rotate(45deg);
-      }
-    }
-
-    .heading {
-      font-weight: 600;
-      font-size: 42px;
-      margin-bottom: 10px;
-    }
-    .shortDescription {
-      font-weight: 300;
-      font-size: 1.1rem;
-      line-height: 1.25rem;
-      margin-bottom: 2rem;
-    }
-    .tasksHeading {
-      font-size: 1.35rem;
-      font-weight: 600;
-      margin-bottom: 10px;
-    }
-  }
-  .secondaryButton {
-    margin-top: 3.5rem;
-    margin-left: 0;
   }
 }
-*/

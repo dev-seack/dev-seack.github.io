@@ -1,6 +1,11 @@
 .showcaseContainer .popup {
   display: none;
   opacity: 0;
+  .showMore {
+    @media screen and (min-width: 900px) {
+      margin: 2rem 0;
+    }
+  }
 }
 .showcaseContainer .popup.active {
   display: flex;
@@ -41,8 +46,6 @@
     width: 100%;
     @media screen and (min-width: 900px) {
       height: 100%;
-      background: url("../assets/projekte/ucs/popup.jpg") top center no-repeat;
-      background-size: cover;
     }
     img {
       @media screen and (min-width: 900px) {
