@@ -1,6 +1,7 @@
 #teamFotoContainer {
   position: relative;
-  margin-top: 150px;
+  max-width: 1400px;
+  margin: 150px auto 0 auto;
   @media screen and (min-width: 900px) {
     margin-top: $navHeight + 150px;
   }
@@ -8,6 +9,7 @@
     border-radius: 5px;
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.15);
     margin-bottom: $borderMobile;
+    width: 100%;
   }
   .socialMediaContainer {
     display: flex;

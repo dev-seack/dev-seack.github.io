@@ -1286,7 +1286,8 @@ footer .bottom .rights {
 
 #teamFotoContainer {
   position: relative;
-  margin-top: 150px;
+  max-width: 1400px;
+  margin: 150px auto 0 auto;
 }
 @media screen and (min-width: 900px) {
   #teamFotoContainer {
@@ -1297,6 +1298,7 @@ footer .bottom .rights {
   border-radius: 5px;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.15);
   margin-bottom: 1rem;
+  width: 100%;
 }
 #teamFotoContainer .socialMediaContainer {
   display: flex;
