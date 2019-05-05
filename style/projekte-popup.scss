@@ -91,9 +91,9 @@
         line-height: 1.2em;
         text-align: justify;
       }
-      .productLink {
-        margin: $borderMobile auto 0 auto;
-      }
+    }
+    .productLink {
+      margin: 2rem auto 0 auto;
     }
     @media screen and (min-width: 900px) {
       width: 55%;

@@ -845,14 +845,16 @@ nav .navItemContainer .navItem:hover {
     order: 2;
   }
 }
-.landingShowcase.cinematicStory img {
+.landingShowcase.cinematicStory img,
+.landingShowcase.cinematicStory video {
   max-height: 90vh;
   padding: 2em 0;
   display: block;
   margin: 0 auto;
 }
 @media screen and (min-width: 1000px) {
-  .landingShowcase.cinematicStory img {
+  .landingShowcase.cinematicStory img,
+.landingShowcase.cinematicStory video {
     padding: 0;
     padding-left: 70px;
   }
@@ -994,6 +996,7 @@ footer .bottom .rights {
   transition: transform 300ms;
   transform: scale(1);
   margin-bottom: 4rem;
+  border-radius: 5px;
 }
 .showcaseContainer .showcase:hover {
   transition: transform 300ms;
@@ -1062,8 +1065,20 @@ footer .bottom .rights {
   }
 }
 .showcaseContainer .showcase#ucs .bgShowcase {
-  background: url("../assets/projekte/ucs/showcase.jpg") center center no-repeat;
+  background: url("../assets/projekte/ucs/showcase.gif") center center no-repeat;
   background-size: cover;
+}
+@media screen and (min-width: 1000px) {
+  .showcaseContainer .showcase#ucs .bgShowcase {
+    position: relative;
+  }
+  .showcaseContainer .showcase#ucs .bgShowcase:after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    background: linear-gradient(-90deg, rgba(17, 17, 17, 0), #111111);
+  }
 }
 .showcaseContainer .showcase#ad24 {
   color: #333333;
@@ -1111,8 +1126,21 @@ footer .bottom .rights {
   }
 }
 .showcaseContainer .showcase#fl .bgShowcase {
-  background: url("../assets/projekte/fl/showcase.webp") center center no-repeat;
+  background: url("../assets/projekte/fl/showcase.gif") center center no-repeat;
   background-size: cover;
+  background-color: #000000;
+}
+@media screen and (min-width: 1000px) {
+  .showcaseContainer .showcase#fl .bgShowcase {
+    position: relative;
+  }
+  .showcaseContainer .showcase#fl .bgShowcase:after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    background: linear-gradient(-90deg, rgba(0, 0, 0, 0), black);
+  }
 }
 
 .showcaseContainer .popup {
@@ -1220,8 +1248,8 @@ footer .bottom .rights {
   line-height: 1.2em;
   text-align: justify;
 }
-.showcaseContainer .popup.active .right .projectDescription .productLink {
-  margin: 1rem auto 0 auto;
+.showcaseContainer .popup.active .right .productLink {
+  margin: 2rem auto 0 auto;
 }
 @media screen and (min-width: 900px) {
   .showcaseContainer .popup.active .right {
