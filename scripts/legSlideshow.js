@@ -154,7 +154,7 @@ $(".legSlideshow").legSlideshow({
       position: "02",
       background: "/assets/wir/coreValue/background2.jpg",
       title: "Unsere Werte",
-      description: "Ein Team ohne Individuen ist nicht kreativ."
+      description: "Ein Team aus Freunden."
     },
     {
       position: "03",

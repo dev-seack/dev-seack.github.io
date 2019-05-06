@@ -1034,6 +1034,7 @@ footer .bottom .rights {
 .showcaseContainer .showcase .showcaseInformation .logo {
   width: 120px;
   margin-bottom: 125px;
+  max-height: 100px;
 }
 .showcaseContainer .showcase .showcaseInformation .statement {
   margin-bottom: 125px;
@@ -1142,6 +1143,33 @@ footer .bottom .rights {
     background: linear-gradient(-90deg, rgba(0, 0, 0, 0), black);
   }
 }
+.showcaseContainer .showcase#legarti {
+  color: #ffffff;
+}
+.showcaseContainer .showcase#legarti .showcaseInformation {
+  background: rgba(255, 218, 72, 0.7);
+}
+@media screen and (min-width: 1000px) {
+  .showcaseContainer .showcase#legarti .showcaseInformation {
+    background: #ffda48;
+  }
+}
+.showcaseContainer .showcase#legarti .bgShowcase {
+  background: url("../assets/projekte/legarti/showcase.jpg") center center no-repeat;
+  background-size: cover;
+}
+@media screen and (min-width: 1000px) {
+  .showcaseContainer .showcase#legarti .bgShowcase {
+    position: relative;
+  }
+  .showcaseContainer .showcase#legarti .bgShowcase:after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    background: linear-gradient(-90deg, rgba(255, 218, 72, 0), #ffda48);
+  }
+}
 
 .showcaseContainer .popup {
   display: none;
@@ -1211,6 +1239,7 @@ footer .bottom .rights {
 .showcaseContainer .popup.active .left .taskDescription {
   margin-top: 3rem;
   margin-bottom: 0.5rem;
+  z-index: 10;
 }
 .showcaseContainer .popup.active .left .taskDescription h3 {
   font-size: 1.35rem;
@@ -1232,6 +1261,31 @@ footer .bottom .rights {
     bottom: 0;
     padding: 1rem;
     width: 45%;
+  }
+}
+.showcaseContainer .popup.active .left.black, .showcaseContainer .popup.active .left.yellow {
+  color: #ffffff;
+}
+@media screen and (min-width: 900px) {
+  .showcaseContainer .popup.active .left.withGradient.black:after {
+    content: "";
+    width: 100%;
+    height: 70%;
+    background: linear-gradient(0deg, black, rgba(0, 0, 0, 0));
+    display: inline-block;
+    position: relative;
+    top: 30%;
+    bottom: 0;
+  }
+  .showcaseContainer .popup.active .left.withGradient.yellow:after {
+    content: "";
+    width: 100%;
+    height: 70%;
+    background: linear-gradient(0deg, #ffda48, rgba(255, 218, 72, 0));
+    display: inline-block;
+    position: relative;
+    top: 30%;
+    bottom: 0;
   }
 }
 .showcaseContainer .popup.active .right {
@@ -1456,7 +1510,6 @@ footer .bottom .rights {
 #coreValueSlideshow .innerContent {
   margin-top: 3rem;
   position: relative;
-  top: 40px;
 }
 @media screen and (min-width: 900px) {
   #coreValueSlideshow .innerContent {

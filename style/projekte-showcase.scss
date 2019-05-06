@@ -46,6 +46,7 @@
       .logo {
         width: 120px;
         margin-bottom: 125px;
+        max-height: 100px;
       }
       .statement {
         margin-bottom: 125px;
@@ -156,6 +157,35 @@
               -90deg,
               rgba(0, 0, 0, 0),
               rgba(0, 0, 0, 1)
+            );
+          }
+        }
+      }
+    }
+    //legarti
+    &#legarti {
+      .showcaseInformation {
+        background: rgba(255, 218, 72, 0.7);
+        @media screen and (min-width: 1000px) {
+          background: $main;
+        }
+      }
+      color: $light;
+      .bgShowcase {
+        background: url("../assets/projekte/legarti/showcase.jpg") center center
+          no-repeat;
+        background-size: cover;
+        @media screen and (min-width: 1000px) {
+          position: relative;
+          &:after {
+            content: "";
+            position: absolute;
+            height: 100%;
+            width: 50%;
+            background: linear-gradient(
+              -90deg,
+              rgba(255, 218, 72, 0),
+              rgba(255, 218, 72, 1)
             );
           }
         }
