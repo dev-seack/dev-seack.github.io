@@ -36,6 +36,7 @@ $(document).ready(() => {
   });
 
   //POPUP
+  /*
   $(".popup .closeIcon").on("click", () => {
     $(".popup").removeClass("active");
     bodyScrollLock.clearAllBodyScrollLocks();
@@ -52,6 +53,7 @@ $(document).ready(() => {
       )
     );
   });
+  */
 
   // Contactform - Focus detection
   $(".inputGroup input, .inputGroup textarea").keyup(function() {

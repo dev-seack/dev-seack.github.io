@@ -938,8 +938,6 @@ footer .bottom .social {
 }
 footer .bottom .social .icon {
   font-size: 30px;
-}
-footer .bottom .social .icon:nth-child(2) {
   margin: 0 5rem;
 }
 footer .bottom .copyright {
@@ -1515,6 +1513,7 @@ footer .bottom .rights {
   #coreValueSlideshow .innerContent {
     width: 70%;
     margin-bottom: 3rem;
+    top: 40px;
   }
 }
 @media screen and (min-width: 1200px) {
