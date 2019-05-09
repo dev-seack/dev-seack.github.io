@@ -147,19 +147,19 @@ $(".legSlideshow").legSlideshow({
     {
       position: "01",
       background: "/assets/wir/coreValue/background1.jpg",
-      title: "Unsere Werte",
+      title: "Pro Aktiv",
       description: "Gute Arbeit ensteht aus Überzeugung."
     },
     {
       position: "02",
       background: "/assets/wir/coreValue/background2.jpg",
-      title: "Unsere Werte",
+      title: "Machermentalität",
       description: "Ein Team aus Freunden."
     },
     {
       position: "03",
       background: "/assets/wir/coreValue/background3.jpg",
-      title: "Unsere Werte",
+      title: "Transparenz",
       description: "Beginne bevor du bereit bist."
     }
   ]

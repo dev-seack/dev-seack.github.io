@@ -35,26 +35,6 @@ $(document).ready(() => {
     $(".mobileMenu").toggleClass("active");
   });
 
-  //POPUP
-  /*
-  $(".popup .closeIcon").on("click", () => {
-    $(".popup").removeClass("active");
-    bodyScrollLock.clearAllBodyScrollLocks();
-  });
-  $(".showcaseContainer .showcase").on("click", function() {
-    let popupName = $(this).data("targetpopup");
-    const popupElement = $(
-      '.showcaseContainer .popup*[data-popup="' + popupName + '"]'
-    );
-    popupElement.addClass("active");
-    bodyScrollLock.disableBodyScroll(
-      document.querySelector(
-        '.showcaseContainer .popup[data-popup="' + popupName + '"]'
-      )
-    );
-  });
-  */
-
   // Contactform - Focus detection
   $(".inputGroup input, .inputGroup textarea").keyup(function() {
     if ($(this).val().length > 0) {
