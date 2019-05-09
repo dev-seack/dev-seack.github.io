@@ -26,18 +26,18 @@
       </a>
       <div class="navItemContainer">
         <a href="/" class="navItem "><span>Startseite</span></a>
-        <a href="./projekte.html" class="navItem"><span>Projekt</span></a>
-        <a href="./wir.html" class="navItem "><span>Wir</span></a>
-        <a href="./kontakt.html" class="navItem active"><span>Kontakt</span></a>
+        <a href="./projekte.php" class="navItem"><span>Projekt</span></a>
+        <a href="./wir.php" class="navItem "><span>Wir</span></a>
+        <a href="./kontakt.php" class="navItem active"><span>Kontakt</span></a>
         <div id="mobileMenuToggle" class="mobileMenuToggle icon menuIcon"></div>
       </div>
     </nav>
     <nav class="mobileMenu">
       <div class="mobileMenuItemContainer">
         <a href="/" class="navItem active"><span>Startseite</span></a>
-        <a href="./projekte.html" class="navItem"><span>Projekt</span></a>
-        <a href="./wir.html" class="navItem"><span>Wir</span></a>
-        <a href="./kontakt.html" class="navItem"><span>Kontakt</span></a>
+        <a href="./projekte.php" class="navItem"><span>Projekt</span></a>
+        <a href="./wir.php" class="navItem"><span>Wir</span></a>
+        <a href="./kontakt.php" class="navItem"><span>Kontakt</span></a>
         <div class="sayhello">
           <p class="subheading">Sag Hallo</p>
           <p class="text">info@legarti.de</p>
@@ -298,14 +298,14 @@
       <p>
         Weitere Informationen finden Sie auf der Informationsseite zum
         <a
-          href="https://www.adobe.com/de/privacy/policies/adobe-fonts.html"
+          href="https://www.adobe.com/de/privacy/policies/adobe-fonts.php"
           target="_blank"
           rel="nofollow"
           >Datenschutz bei Adobe Typekit</a
         >
         sowie in den
         <a
-          href="https://www.adobe.com/de/privacy/policy.html"
+          href="https://www.adobe.com/de/privacy/policy.php"
           target="_blank"
           rel="nofollow"
           >Datenschutzrichtlinien von Adobe</a
@@ -364,58 +364,5 @@
       </p>
       <p>Quelle: <a href="https://www.e-recht24.de">www.e-recht24.de</a></p>
     </div>
-    <!-- Footer -->
-    <footer class="fullContainer">
-      <div class="content">
-        <div class="innerContent">
-          <h2 class="heading">Ready To Talk?</h2>
-          <h4 class="subheading">Wir freuen uns auf deine Nachricht.</h4>
-          <div class="contactData">
-            <div class="contactDataItem">
-              <p class="subheading">Webseiten/Graphic Design</p>
-              <p class="heading">ms@legarti.de</p>
-            </div>
-            <div class="contactDataItem">
-              <p class="subheading">Branding/Content</p>
-              <p class="heading">rt@legarti.de</p>
-            </div>
-          </div>
-          <a href="/pages/kontakt.html" class="primaryButton">Kontakt</a>
-        </div>
-        <div class="logo">
-          <img src="../assets/logoAccent.svg" alt="" />
-        </div>
-      </div>
-      <div class="bottom">
-        <p class="copyright">
-          Legarti UG (haftungsbeschränkt) | Copyright 2019
-        </p>
-        <p class="social">
-          <a href="" class="heroSocialItem icon brand facebookIcon"></a>
-          <a href="" class="heroSocialItem icon brand instagramIcon"></a>
-          <a href="" class="heroSocialItem icon brand youtubeIcon"></a>
-        </p>
-        <p class="withLove">
-          Made with <i class="fas fa-heart"></i> and
-          <i class="fas fa-smile"></i> in Germany.
-        </p>
-        <p class="rights negativeContainer">
-          <span
-            ><a href="/pages/datenschutzerklaerung.html"
-              >Datenschutzerklärung</a
-            ></span
-          >
-          <span><a href="/pages/impressum.html"> | Impressum</a></span>
-        </p>
-      </div>
-    </footer>
-    <!-- Scripts -->
-    <script
-      src="https://code.jquery.com/jquery-3.4.0.slim.min.js"
-      integrity="sha256-ZaXnYkHGqIhqTbJ6MB4l9Frs/r7U4jlx7ir8PJYBqbI="
-      crossorigin="anonymous"
-    ></script>
-    <script src="../scripts/bodyScrollLock.min.js"></script>
-    <script src="../functions.js"></script>
-  </body>
-</html>
+<!-- FOOTER -->
+<?php include("../components/footer.php"); ?>

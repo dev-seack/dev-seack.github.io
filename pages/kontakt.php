@@ -19,11 +19,11 @@
       <div class="navItemContainer">
         <a href="/" class="navItem ">
           <span>Startseite</span></a>
-        <a href="./projekte.html" class="navItem">
+        <a href="./projekte.php" class="navItem">
           <span>Projekte</span></a>
-        <a href="./wir.html" class="navItem ">
+        <a href="./wir.php" class="navItem ">
           <span>Wir</span></a>
-        <a href="./kontakt.html" class="navItem active">
+        <a href="./kontakt.php" class="navItem active">
           <span>Kontakt</span></a>
         <div id="mobileMenuToggle" class="mobileMenuToggle icon menuIcon"></div>
       </div>
@@ -32,11 +32,11 @@
       <div class="mobileMenuItemContainer">
         <a href="/" class="navItem active">
           <span>Startseite</span></a>
-        <a href="./projekte.html" class="navItem">
+        <a href="./projekte.php" class="navItem">
           <span>Projekte</span></a>
-        <a href="./wir.html" class="navItem">
+        <a href="./wir.php" class="navItem">
           <span>Wir</span></a>
-        <a href="./kontakt.html" class="navItem">
+        <a href="./kontakt.php" class="navItem">
           <span>Kontakt</span></a>
         <div class="sayhello">
           <p class="subheading">Sag Hallo</p>
@@ -104,10 +104,10 @@
           </p>
           <p class="rights negativeContainer">
             <span >
-              <a href="/pages/datenschutzerklaerung.html">Datenschutzerklärung</a >
+              <a href="/pages/datenschutzerklaerung.php">Datenschutzerklärung</a >
             </span >
             <span>
-              <a href="/pages/impressum.html">
+              <a href="/pages/impressum.php">
                 | Impressum</a>
             </span>
           </p>
