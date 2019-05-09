@@ -30,22 +30,6 @@
       order: 2;
       top: -120px;
       right: -250px;
-      transform: scale(2);
-    }
-    @media screen and (min-width: 1200px) {
-      top: -250px;
-      right: -250px;
-      transform: scale(1.5);
-    }
-    @media screen and (min-width: 1400px) {
-      top: -300px;
-      right: -300px;
-      transform: scale(1.2);
-    }
-    @media screen and (min-width: 1800px) {
-      top: -400px;
-      right: -300px;
-      transform: scale(1);
     }
   }
 }
