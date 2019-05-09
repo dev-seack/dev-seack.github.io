@@ -496,16 +496,16 @@ nav .navItemContainer .navItem:hover {
   }
 }
 .quote:before {
-  top: -120px;
+  top: -118px;
 }
 @media screen and (min-width: 900px) {
   .quote:before {
-    top: -200px;
+    top: -198px;
   }
 }
 @media screen and (min-width: 1200px) {
   .quote:before {
-    top: -250px;
+    top: -248px;
   }
 }
 .quote:after {
@@ -1738,6 +1738,7 @@ nav.mobileMenu.dark {
   border: none;
   transition: box-shadow 300ms;
   font-size: 1.25rem;
+  font-family: "futura-pt", "futura-pt-bold", "futura-pt-condensed", sans-serif;
 }
 #contactFormContainer .contactForm .inputGroup input:focus, #contactFormContainer .contactForm .inputGroup input:focus,
 #contactFormContainer .contactForm .inputGroup textarea:focus,
