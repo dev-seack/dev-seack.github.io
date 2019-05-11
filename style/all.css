@@ -916,6 +916,7 @@ footer .bottom .social {
   order: 1;
   display: flex;
   justify-content: space-around;
+  width: 100%;
   margin-bottom: 2rem;
 }
 @media screen and (min-width: 900px) {
@@ -939,8 +940,8 @@ footer .bottom .withLove {
 footer .bottom .rights {
   background: #333333;
   margin-top: 2rem;
-  padding: 1rem;
   order: 4;
+  padding: 1rem;
   text-align: center;
 }
 
