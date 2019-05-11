@@ -326,10 +326,8 @@ button:hover {
   margin: 0;
 }
 
-@media (max-width: 699px) {
-  .rellax {
-    transform: translate3d(0, 0, 0) !important;
-  }
+.uppercase {
+  text-transform: uppercase;
 }
 
 .mobileMenu {
@@ -510,6 +508,17 @@ nav .navItemContainer .navItem:hover {
 }
 .quote:after {
   transform: scaleY(-1);
+  bottom: -118px;
+}
+@media screen and (min-width: 900px) {
+  .quote:after {
+    bottom: -198px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .quote:after {
+    bottom: -248px;
+  }
 }
 .quote .quoteText {
   font-size: 32px;
@@ -1373,10 +1382,63 @@ footer .bottom .rights {
     margin-top: 300px;
   }
 }
-#legeartismeaning .legeartis {
+#legeartismeaning img.legeartis {
   width: 100%;
 }
-#legeartismeaning .latein {
+#legeartismeaning .textContent {
+  padding: 0 1rem;
+  position: relative;
+  top: -18px;
+}
+@media screen and (min-width: 700px) {
+  #legeartismeaning .textContent {
+    top: -22px;
+  }
+}
+@media screen and (min-width: 900px) {
+  #legeartismeaning .textContent {
+    top: -32px;
+  }
+}
+#legeartismeaning .textContent p.latein,
+#legeartismeaning .textContent p.nachallenregeln {
+  width: 100%;
+  text-align: right;
+}
+#legeartismeaning .textContent p.latein {
+  font-size: 18px;
+  font-weight: 600;
+}
+@media screen and (min-width: 700px) {
+  #legeartismeaning .textContent p.latein {
+    font-size: 22px;
+  }
+}
+@media screen and (min-width: 900px) {
+  #legeartismeaning .textContent p.latein {
+    font-size: 32px;
+  }
+}
+#legeartismeaning .textContent p.nachallenregeln {
+  font-size: 32px;
+  font-weight: 700;
+}
+@media screen and (min-width: 700px) {
+  #legeartismeaning .textContent p.nachallenregeln {
+    font-size: 42px;
+  }
+}
+@media screen and (min-width: 900px) {
+  #legeartismeaning .textContent p.nachallenregeln {
+    font-size: 62px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  #legeartismeaning .textContent p.nachallenregeln {
+    font-size: 72px;
+  }
+}
+#legeartismeaning img.latein {
   margin-left: auto;
   display: block;
   position: relative;
@@ -1384,16 +1446,16 @@ footer .bottom .rights {
   top: -0.75rem;
 }
 @media screen and (min-width: 700px) {
-  #legeartismeaning .latein {
+  #legeartismeaning img.latein {
     width: 25%;
   }
 }
 @media screen and (min-width: 1400px) {
-  #legeartismeaning .latein {
+  #legeartismeaning img.latein {
     width: 20%;
   }
 }
-#legeartismeaning .nachallenregelen {
+#legeartismeaning img.nachallenregeln {
   display: block;
   position: relative;
   top: -5px;
@@ -1401,12 +1463,12 @@ footer .bottom .rights {
   margin-left: auto;
 }
 @media screen and (min-width: 700px) {
-  #legeartismeaning .nachallenregelen {
+  #legeartismeaning img.nachallenregeln {
     width: 55%;
   }
 }
 @media screen and (min-width: 1000px) {
-  #legeartismeaning .nachallenregelen {
+  #legeartismeaning img.nachallenregeln {
     width: 65%;
   }
 }

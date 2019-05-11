@@ -37,6 +37,13 @@
   }
   &:after {
     transform: scaleY(-1);
+    bottom: -118px;
+    @media screen and (min-width: 900px) {
+      bottom: -198px;
+    }
+    @media screen and (min-width: 1200px) {
+      bottom: -248px;
+    }
   }
   .quoteText {
     font-size: 32px;

@@ -99,8 +99,6 @@ button:hover {
   margin: 0;
 }
 
-.rellax {
-  @media (max-width: 699px) {
-    transform: translate3d(0, 0, 0) !important;
-  }
+.uppercase {
+  text-transform: uppercase;
 }
