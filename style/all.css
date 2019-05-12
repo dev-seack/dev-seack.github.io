@@ -842,7 +842,6 @@ nav .navItemContainer .navItem:hover {
 @media screen and (min-width: 1000px) {
   .landingShowcase.cinematicStory .cinematicStoryWrapper {
     margin: 0;
-    margin-left: 70px;
   }
 }
 .landingShowcase.cinematicStory .cinematicStoryWrapper .cinematicStoryDisplayWrapper {
@@ -1003,6 +1002,9 @@ footer .bottom .rights {
   transform: scale(1);
   margin-bottom: 4rem;
   border-radius: 5px;
+  border: 1px solid #eee;
+  border-bottom: 0;
+  border-right: 0;
 }
 .showcaseContainer .showcase:hover {
   transition: transform 300ms;
