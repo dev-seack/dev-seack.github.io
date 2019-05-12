@@ -1414,7 +1414,7 @@ footer .bottom .rights {
 #legeartismeaning .textContent {
   padding: 0 1rem;
   position: relative;
-  top: -18px;
+  top: -16px;
 }
 @media screen and (min-width: 700px) {
   #legeartismeaning .textContent {
@@ -1432,7 +1432,7 @@ footer .bottom .rights {
   text-align: right;
 }
 #legeartismeaning .textContent p.latein {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 600;
 }
 @media screen and (min-width: 700px) {
@@ -1930,6 +1930,10 @@ footer.dark .bottom .rights {
   background: #ffda48;
 }
 
+.datenschutz,
+.impressum {
+  color: #333333 !important;
+}
 .datenschutz .container,
 .impressum .container {
   padding-top: 230px;
@@ -1972,7 +1976,7 @@ footer.dark .bottom .rights {
 }
 .datenschutz .container p a,
 .impressum .container p a {
-  color: #333333;
+  color: #ffffff;
 }
 
 .icon {

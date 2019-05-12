@@ -1,5 +1,6 @@
 .datenschutz,
 .impressum {
+  color: $dark !important;
   .container {
     padding-top: $navHeight * 2;
     .heading {
@@ -30,7 +31,7 @@
         text-align: left;
       }
       a {
-        color: $dark;
+        color: $light;
       }
     }
   }
