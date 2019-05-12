@@ -148,19 +148,19 @@ $(".legSlideshow").legSlideshow({
       position: "01",
       background: "/assets/wir/coreValue/background1.jpg",
       title: "Pro Aktiv",
-      description: "Gute Arbeit ensteht aus Überzeugung."
+      description: "Entwicklung selbst bestimmen."
     },
     {
       position: "02",
       background: "/assets/wir/coreValue/background2.jpg",
       title: "Machermentalität",
-      description: "Ein Team aus Freunden."
+      description: "Im Ruhrpott hat man gelernt anzupacken."
     },
     {
       position: "03",
       background: "/assets/wir/coreValue/background3.jpg",
       title: "Transparenz",
-      description: "Beginne bevor du bereit bist."
+      description: "Fortschritt durch Kommunikation."
     }
   ]
 });
