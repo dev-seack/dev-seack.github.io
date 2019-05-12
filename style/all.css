@@ -819,6 +819,7 @@ nav .navItemContainer .navItem:hover {
 .landingShowcase.cinematicStory .cinematicStoryContainer {
   width: 100%;
   order: 2;
+  text-align: center;
 }
 @media screen and (min-width: 1000px) {
   .landingShowcase.cinematicStory .cinematicStoryContainer {
@@ -833,19 +834,36 @@ nav .navItemContainer .navItem:hover {
     order: 2;
   }
 }
+.landingShowcase.cinematicStory .cinematicStoryWrapper {
+  display: inline-block;
+  position: relative;
+  margin: 2em 0;
+}
+@media screen and (min-width: 1000px) {
+  .landingShowcase.cinematicStory .cinematicStoryWrapper {
+    margin: 0;
+    margin-left: 70px;
+  }
+}
+.landingShowcase.cinematicStory .cinematicStoryWrapper .cinematicStoryDisplayWrapper {
+  position: absolute;
+  width: 87.6%;
+  padding-bottom: 154%;
+  top: 12%;
+  left: 6%;
+  overflow: hidden;
+}
+.landingShowcase.cinematicStory .cinematicStoryWrapper .cinematicStoryDisplayWrapper video {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
 .landingShowcase.cinematicStory img,
 .landingShowcase.cinematicStory video {
   max-height: 90vh;
-  padding: 2em 0;
   display: block;
   margin: 0 auto;
-}
-@media screen and (min-width: 1000px) {
-  .landingShowcase.cinematicStory img,
-.landingShowcase.cinematicStory video {
-    padding: 0;
-    padding-left: 70px;
-  }
 }
 
 footer {
@@ -1080,7 +1098,7 @@ footer .bottom .rights {
   }
 }
 .showcaseContainer .showcase#ad24 .bgShowcase {
-  background: url("../assets/projekte/ad24/showcase.jpg") center center no-repeat;
+  background: url("../assets/projekte/auftragsdepot24/showcase.jpg") center center no-repeat;
   background-size: cover;
 }
 .showcaseContainer .showcase#tfa {
