@@ -1068,13 +1068,13 @@ footer .bottom .rights {
 .showcaseContainer .showcase#ucs {
   color: #ffffff;
 }
-.showcaseContainer .showcase#ucs .showcaseInformation {
-  background: rgba(1, 1, 1, 0.7);
-}
 @media screen and (min-width: 1000px) {
-  .showcaseContainer .showcase#ucs .showcaseInformation {
+  .showcaseContainer .showcase#ucs {
     background: #111111;
   }
+}
+.showcaseContainer .showcase#ucs .showcaseInformation {
+  background: rgba(1, 1, 1, 0.7);
 }
 .showcaseContainer .showcase#ucs .bgShowcase {
   background: url("../assets/projekte/ucs/showcase.gif") center center no-repeat;
@@ -1095,13 +1095,13 @@ footer .bottom .rights {
 .showcaseContainer .showcase#ad24 {
   color: #333333;
 }
-.showcaseContainer .showcase#ad24 .showcaseInformation {
-  background: rgba(255, 255, 255, 0.7);
-}
 @media screen and (min-width: 1000px) {
-  .showcaseContainer .showcase#ad24 .showcaseInformation {
+  .showcaseContainer .showcase#ad24 {
     background: #ffffff;
   }
+}
+.showcaseContainer .showcase#ad24 .showcaseInformation {
+  background: rgba(255, 255, 255, 0.7);
 }
 .showcaseContainer .showcase#ad24 .bgShowcase {
   background: url("../assets/projekte/auftragsdepot24/showcase.jpg") center center no-repeat;
@@ -1110,17 +1110,17 @@ footer .bottom .rights {
 .showcaseContainer .showcase#tfa {
   color: #ffffff;
 }
+@media screen and (min-width: 1000px) {
+  .showcaseContainer .showcase#tfa {
+    background: #ee7230;
+  }
+}
 .showcaseContainer .showcase#tfa .showcaseInformation {
   background: rgba(238, 114, 48, 0.7);
 }
 .showcaseContainer .showcase#tfa .showcaseInformation .logo {
   height: 70px;
   width: auto;
-}
-@media screen and (min-width: 1000px) {
-  .showcaseContainer .showcase#tfa .showcaseInformation {
-    background: #ee7230;
-  }
 }
 .showcaseContainer .showcase#tfa .bgShowcase {
   background: url("../assets/projekte/tfa/showcase.jpg") center center no-repeat;
@@ -1129,13 +1129,13 @@ footer .bottom .rights {
 .showcaseContainer .showcase#fl {
   color: #ffffff;
 }
-.showcaseContainer .showcase#fl .showcaseInformation {
-  background: rgba(0, 0, 0, 0.7);
-}
 @media screen and (min-width: 1000px) {
-  .showcaseContainer .showcase#fl .showcaseInformation {
+  .showcaseContainer .showcase#fl {
     background: #000000;
   }
+}
+.showcaseContainer .showcase#fl .showcaseInformation {
+  background: rgba(0, 0, 0, 0.7);
 }
 .showcaseContainer .showcase#fl .bgShowcase {
   background: url("../assets/projekte/fl/showcase.gif") center center no-repeat;
@@ -1157,13 +1157,13 @@ footer .bottom .rights {
 .showcaseContainer .showcase#legarti {
   color: #ffffff;
 }
-.showcaseContainer .showcase#legarti .showcaseInformation {
-  background: rgba(255, 218, 72, 0.7);
-}
 @media screen and (min-width: 1000px) {
-  .showcaseContainer .showcase#legarti .showcaseInformation {
+  .showcaseContainer .showcase#legarti {
     background: #ffda48;
   }
+}
+.showcaseContainer .showcase#legarti .showcaseInformation {
+  background: rgba(255, 218, 72, 0.7);
 }
 .showcaseContainer .showcase#legarti .bgShowcase {
   background: url("../assets/projekte/legarti/showcase.jpg") center center no-repeat;

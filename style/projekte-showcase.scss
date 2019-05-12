@@ -74,11 +74,11 @@
     // showcases
     //ucs
     &#ucs {
+      @media screen and (min-width: 1000px) {
+        background: #111111;
+      }
       .showcaseInformation {
         background: rgba(1, 1, 1, 0.7);
-        @media screen and (min-width: 1000px) {
-          background: #111111;
-        }
       }
       color: $light;
       .bgShowcase {
@@ -103,11 +103,11 @@
     }
     //ad24
     &#ad24 {
+      @media screen and (min-width: 1000px) {
+        background: #ffffff;
+      }
       .showcaseInformation {
         background: rgba(255, 255, 255, 0.7);
-        @media screen and (min-width: 1000px) {
-          background: #ffffff;
-        }
       }
       color: $dark;
       .bgShowcase {
@@ -118,14 +118,14 @@
     }
     //tfa
     &#tfa {
+      @media screen and (min-width: 1000px) {
+        background: #ee7230;
+      }
       .showcaseInformation {
         background: rgba(238, 114, 48, 0.7);
         .logo {
           height: 70px;
           width: auto;
-        }
-        @media screen and (min-width: 1000px) {
-          background: #ee7230;
         }
       }
       color: $light;
@@ -137,11 +137,11 @@
     }
     //fl
     &#fl {
+      @media screen and (min-width: 1000px) {
+        background: #000000;
+      }
       .showcaseInformation {
         background: rgba(0, 0, 0, 0.7);
-        @media screen and (min-width: 1000px) {
-          background: #000000;
-        }
       }
       color: $light;
       .bgShowcase {
@@ -167,11 +167,11 @@
     }
     //legarti
     &#legarti {
+      @media screen and (min-width: 1000px) {
+        background: $main;
+      }
       .showcaseInformation {
         background: rgba(255, 218, 72, 0.7);
-        @media screen and (min-width: 1000px) {
-          background: $main;
-        }
       }
       color: $light;
       .bgShowcase {
