@@ -853,6 +853,7 @@ nav .navItemContainer .navItem:hover {
   left: 6%;
   overflow: hidden;
 }
+.landingShowcase.cinematicStory .cinematicStoryWrapper .cinematicStoryDisplayWrapper img,
 .landingShowcase.cinematicStory .cinematicStoryWrapper .cinematicStoryDisplayWrapper video {
   position: absolute;
   width: 100%;
