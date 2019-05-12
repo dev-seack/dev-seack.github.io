@@ -107,13 +107,13 @@
     }
     .bigNumber {
       position: relative;
-      right: -5rem;
+      right: -75px;
       @media screen and (min-width: 700px) {
-        right: -$borderDesktop * 1.25;
+        right: -$borderDesktop * 1;
       }
 
       @media screen and (min-width: 1000px) {
-        right: -$borderDesktop * 2;
+        right: -$borderDesktop * 1.85;
       }
     }
   }

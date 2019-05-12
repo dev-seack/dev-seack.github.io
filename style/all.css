@@ -798,16 +798,16 @@ nav .navItemContainer .navItem:hover {
 }
 .landingShowcase.right .landingShowcaseText .bigNumber {
   position: relative;
-  right: -5rem;
+  right: -75px;
 }
 @media screen and (min-width: 700px) {
   .landingShowcase.right .landingShowcaseText .bigNumber {
-    right: -87.5px;
+    right: -70px;
   }
 }
 @media screen and (min-width: 1000px) {
   .landingShowcase.right .landingShowcaseText .bigNumber {
-    right: -140px;
+    right: -129.5px;
   }
 }
 .landingShowcase.right .landingShowcaseImage {
