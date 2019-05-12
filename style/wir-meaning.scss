@@ -9,7 +9,7 @@
   .textContent {
     padding: 0 $borderMobile;
     position: relative;
-    top: -18px;
+    top: -16px;
     @media screen and (min-width: 700px) {
       top: -22px;
     }
@@ -22,7 +22,7 @@
       text-align: right;
     }
     p.latein {
-      font-size: 18px;
+      font-size: 16px;
       font-weight: 600;
       @media screen and (min-width: 700px) {
         font-size: 22px;
@@ -32,7 +32,7 @@
       }
     }
     p.nachallenregeln {
-      font-size: 32px;
+      font-size: 25px;
       @media screen and (min-width: 700px) {
         font-size: 42px;
       }
