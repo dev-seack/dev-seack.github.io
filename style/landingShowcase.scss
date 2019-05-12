@@ -37,6 +37,7 @@
     }
   }
   .landingShowcaseImage {
+    width: 100%;
     padding: 0 $borderMobile;
     @media screen and (min-width: 700px) {
       padding: 0;

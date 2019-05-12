@@ -710,6 +710,7 @@ nav .navItemContainer .navItem:hover {
   }
 }
 .landingShowcase .landingShowcaseImage {
+  width: 100%;
   padding: 0 1rem;
 }
 @media screen and (min-width: 700px) {
