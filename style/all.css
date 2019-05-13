@@ -152,7 +152,8 @@ table {
     margin: 0;
   }
 }
-.primaryButton:before, .primaryButton:after {
+.primaryButton:before,
+.primaryButton:after {
   content: "";
   width: 20px;
   height: 20px;
@@ -241,7 +242,8 @@ body {
   font-weight: 400;
   font-style: normal;
 }
-body.openMenu, body.openPopup {
+body.openMenu,
+body.openPopup {
   overflow: hidden;
 }
 body.light {
@@ -467,9 +469,11 @@ nav .navItemContainer .navItem:hover {
   margin-bottom: 350px;
   position: relative;
 }
-.quote:before, .quote:after {
+.quote:before,
+.quote:after {
   content: url("../assets/Legarti-Webcontent-Quote-Bg.svg");
-  background: url("../assets/Legarti-Webcontent-Quote-Bg.svg") top left no-repeat;
+  background: url("../assets/Legarti-Webcontent-Quote-Bg.svg") top left
+    no-repeat;
   background-size: cover;
   width: 100%;
   height: 120px;
@@ -480,17 +484,20 @@ nav .navItemContainer .navItem:hover {
   overflow: hidden;
 }
 @media screen and (min-width: 900px) {
-  .quote:before, .quote:after {
+  .quote:before,
+  .quote:after {
     height: 200px;
   }
 }
 @media screen and (min-width: 1200px) {
-  .quote:before, .quote:after {
+  .quote:before,
+  .quote:after {
     height: 250px;
   }
 }
 @media screen and (min-width: 1200px) {
-  .quote:before, .quote:after {
+  .quote:before,
+  .quote:after {
     height: 250px;
   }
 }
@@ -630,6 +637,7 @@ nav .navItemContainer .navItem:hover {
   flex-direction: column;
   justify-content: space-between;
   margin-top: 50px;
+  align-items: center;
 }
 @media screen and (min-width: 1000px) {
   #whatwedo {
@@ -663,7 +671,6 @@ nav .navItemContainer .navItem:hover {
 @media screen and (min-width: 1000px) {
   #whatwedo .showcase {
     order: 2;
-    top: -120px;
     right: -250px;
   }
 }
@@ -847,7 +854,9 @@ nav .navItemContainer .navItem:hover {
     margin: 0;
   }
 }
-.landingShowcase.cinematicStory .cinematicStoryWrapper .cinematicStoryDisplayWrapper {
+.landingShowcase.cinematicStory
+  .cinematicStoryWrapper
+  .cinematicStoryDisplayWrapper {
   position: absolute;
   width: 87.6%;
   padding-bottom: 154%;
@@ -855,8 +864,14 @@ nav .navItemContainer .navItem:hover {
   left: 6%;
   overflow: hidden;
 }
-.landingShowcase.cinematicStory .cinematicStoryWrapper .cinematicStoryDisplayWrapper img,
-.landingShowcase.cinematicStory .cinematicStoryWrapper .cinematicStoryDisplayWrapper video {
+.landingShowcase.cinematicStory
+  .cinematicStoryWrapper
+  .cinematicStoryDisplayWrapper
+  img,
+.landingShowcase.cinematicStory
+  .cinematicStoryWrapper
+  .cinematicStoryDisplayWrapper
+  video {
   position: absolute;
   width: 100%;
   top: 0;
@@ -895,7 +910,7 @@ footer .content .logo {
 }
 @media screen and (min-width: 900px) {
   footer .content .innerContent,
-footer .content .logo {
+  footer .content .logo {
     width: 50%;
   }
 }
@@ -1104,7 +1119,8 @@ footer .bottom .rights {
   background: rgba(255, 255, 255, 0.7);
 }
 .showcaseContainer .showcase#ad24 .bgShowcase {
-  background: url("../assets/projekte/auftragsdepot24/showcase.jpg") center center no-repeat;
+  background: url("../assets/projekte/auftragsdepot24/showcase.jpg") center
+    center no-repeat;
   background-size: cover;
 }
 .showcaseContainer .showcase#tfa {
@@ -1166,7 +1182,8 @@ footer .bottom .rights {
   background: rgba(255, 218, 72, 0.7);
 }
 .showcaseContainer .showcase#legarti .bgShowcase {
-  background: url("../assets/projekte/legarti/showcase.jpg") center center no-repeat;
+  background: url("../assets/projekte/legarti/showcase.jpg") center center
+    no-repeat;
   background-size: cover;
 }
 @media screen and (min-width: 1000px) {
@@ -1274,7 +1291,8 @@ footer .bottom .rights {
     width: 45%;
   }
 }
-.showcaseContainer .popup.active .left.black, .showcaseContainer .popup.active .left.yellow {
+.showcaseContainer .popup.active .left.black,
+.showcaseContainer .popup.active .left.yellow {
   color: #ffffff;
 }
 @media screen and (min-width: 900px) {
@@ -1518,7 +1536,8 @@ footer .bottom .rights {
   -ms-transform: translatez(0);
   -o-transform: translatez(0);
   transform: translatez(0);
-  background: url("../assets/wir/coreValue/background1.jpg") center center no-repeat;
+  background: url("../assets/wir/coreValue/background1.jpg") center center
+    no-repeat;
   background-size: cover;
   margin-top: 5rem;
   transition: background-image 0.5s ease;
@@ -1828,7 +1847,8 @@ nav.mobileMenu.dark {
   font-size: 1.25rem;
   font-family: "futura-pt", "futura-pt-bold", "futura-pt-condensed", sans-serif;
 }
-#contactFormContainer .contactForm .inputGroup input:focus, #contactFormContainer .contactForm .inputGroup input:focus,
+#contactFormContainer .contactForm .inputGroup input:focus,
+#contactFormContainer .contactForm .inputGroup input:focus,
 #contactFormContainer .contactForm .inputGroup textarea:focus,
 #contactFormContainer .contactForm .inputGroup textarea:focus {
   box-shadow: 0 0 0px 3px inset #ffda48;
@@ -1840,7 +1860,8 @@ nav.mobileMenu.dark {
   color: #ffffff;
   width: 100%;
 }
-#contactFormContainer .contactForm .inputGroup .primaryButton:hover:after, #contactFormContainer .contactForm .inputGroup .primaryButton:hover:before {
+#contactFormContainer .contactForm .inputGroup .primaryButton:hover:after,
+#contactFormContainer .contactForm .inputGroup .primaryButton:hover:before {
   background: #333333;
 }
 
@@ -1970,7 +1991,7 @@ footer.dark .bottom .rights {
 }
 @media screen and (min-width: 700px) {
   .datenschutz .container p,
-.impressum .container p {
+  .impressum .container p {
     text-align: left;
   }
 }
