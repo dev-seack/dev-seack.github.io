@@ -146,19 +146,19 @@ $(".legSlideshow").legSlideshow({
   slides: [
     {
       position: "01",
-      background: "//aahtgcboen.cloudimg.io/cdno/n/png-lossy-65/_legarti_/assets/wir/coreValue/background1.jpg",
+      background: "//aahtgcboen.cloudimg.io/width/1920/foil1.png-lossy-65/_legarti_/assets/wir/coreValue/background1.jpg",
       title: "Pro Aktiv",
       description: "Entwicklung selbst bestimmen."
     },
     {
       position: "02",
-      background: "//aahtgcboen.cloudimg.io/cdno/n/png-lossy-65/_legarti_/assets/wir/coreValue/background2.jpg",
+      background: "//aahtgcboen.cloudimg.io/width/1920/foil1.png-lossy-65/_legarti_/assets/wir/coreValue/background2.jpg",
       title: "Machermentalität",
       description: "Im Ruhrpott hat man gelernt anzupacken."
     },
     {
       position: "03",
-      background: "//aahtgcboen.cloudimg.io/cdno/n/png-lossy-65/_legarti_/assets/wir/coreValue/background3.jpg",
+      background: "//aahtgcboen.cloudimg.io/width/1920/foil1.png-lossy-65/_legarti_/assets/wir/coreValue/background3.jpg",
       title: "Transparenz",
       description: "Fortschritt durch Kommunikation."
     }
