@@ -14,7 +14,7 @@
       crossorigin="anonymous"
     />
     <link rel="shortcut icon" href="../assets/logo.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="../node_modules/sal.js/dist/sal.css" />
+    <link rel="stylesheet" href="../style/sal.css" />
     <script src="../scripts/bodyScrollLock.min.js"></script>
   </head>
   <body>
@@ -49,7 +49,11 @@
     </nav>
     <main>
       <!-- Mission Statement -->
-      <section class="container missionStatement">
+      <section
+        class="container missionStatement"
+        data-sal="fade"
+        data-sal-duration="750"
+      >
         <h1>Hier koennte ein tolles mission statement stehen.</h1>
       </section>
       <!-- Teamfoto -->
@@ -108,7 +112,7 @@
             data-slideshow-placeholder="description"
             data-slideshow-anim-delay="600"
           >
-            <span>Gute Arbeit ensteht aus Überzeugung.</span>
+            <span>Entwicklung selbst bestimmen.</span>
           </h3>
         </div>
         <div class="arrows">
@@ -289,7 +293,7 @@
     <script src="../scripts/animation.js"></script>
     <script src="../functions.js"></script>
     <script src="../scripts/legSlideshow.js"></script>
-    <script src="../node_modules/sal.js/dist/sal.js"></script>
+    <script src="../scripts/sal.js"></script>
     <script>
       sal({});
     </script>
