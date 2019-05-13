@@ -71,7 +71,9 @@ footer {
       margin-bottom: 2rem;
       .icon {
         font-size: 30px;
-        margin: 0 5rem;
+        @media screen and (min-width: 900px) {
+          margin: 0 5rem;
+        }
       }
     }
     .copyright {
