@@ -629,6 +629,7 @@ nav .navItemContainer .navItem:hover {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: center;
   margin-top: 50px;
 }
 @media screen and (min-width: 1000px) {
@@ -948,7 +949,11 @@ footer .bottom .social {
 }
 footer .bottom .social .icon {
   font-size: 30px;
-  margin: 0 5rem;
+}
+@media screen and (min-width: 900px) {
+  footer .bottom .social .icon {
+    margin: 0 5rem;
+  }
 }
 footer .bottom .copyright {
   order: 2;
