@@ -468,8 +468,8 @@ nav .navItemContainer .navItem:hover {
   position: relative;
 }
 .quote:before, .quote:after {
-  content: url("../assets/Legarti-Webcontent-Quote-Bg.svg");
-  background: url("../assets/Legarti-Webcontent-Quote-Bg.svg") top left no-repeat;
+  content: url("//aahtgcboen.cloudimg.io/cdno/n/png-lossy-65/_legarti_/assets/Legarti-Webcontent-Quote-Bg.svg");
+  background: url("//aahtgcboen.cloudimg.io/cdno/n/png-lossy-65/_legarti_/assets/Legarti-Webcontent-Quote-Bg.svg") top left no-repeat;
   background-size: cover;
   width: 100%;
   height: 120px;
@@ -1077,7 +1077,7 @@ footer .bottom .rights {
   background: rgba(1, 1, 1, 0.7);
 }
 .showcaseContainer .showcase#ucs .bgShowcase {
-  background: url("../assets/projekte/ucs/showcase.gif") center center no-repeat;
+  background: url("//aahtgcboen.cloudimg.io/cdno/n/png-lossy-65/_legarti_/assets/projekte/ucs/showcase.gif") center center no-repeat;
   background-size: cover;
 }
 @media screen and (min-width: 1000px) {
@@ -1104,7 +1104,7 @@ footer .bottom .rights {
   background: rgba(255, 255, 255, 0.7);
 }
 .showcaseContainer .showcase#ad24 .bgShowcase {
-  background: url("../assets/projekte/auftragsdepot24/showcase.jpg") center center no-repeat;
+  background: url("//aahtgcboen.cloudimg.io/cdno/n/png-lossy-65/_legarti_/assets/projekte/auftragsdepot24/showcase.jpg") center center no-repeat;
   background-size: cover;
 }
 .showcaseContainer .showcase#tfa {
@@ -1123,7 +1123,7 @@ footer .bottom .rights {
   width: auto;
 }
 .showcaseContainer .showcase#tfa .bgShowcase {
-  background: url("../assets/projekte/tfa/showcase.jpg") center center no-repeat;
+  background: url("//aahtgcboen.cloudimg.io/cdno/n/png-lossy-65/_legarti_/assets/projekte/tfa/showcase.jpg") center center no-repeat;
   background-size: cover;
 }
 .showcaseContainer .showcase#fl {
@@ -1138,7 +1138,7 @@ footer .bottom .rights {
   background: rgba(0, 0, 0, 0.7);
 }
 .showcaseContainer .showcase#fl .bgShowcase {
-  background: url("../assets/projekte/fl/showcase.gif") center center no-repeat;
+  background: url("//aahtgcboen.cloudimg.io/cdno/n/png-lossy-65/_legarti_/assets/projekte/fl/showcase.gif") center center no-repeat;
   background-size: cover;
   background-color: #000000;
 }
@@ -1166,7 +1166,7 @@ footer .bottom .rights {
   background: rgba(255, 218, 72, 0.7);
 }
 .showcaseContainer .showcase#legarti .bgShowcase {
-  background: url("../assets/projekte/legarti/showcase.jpg") center center no-repeat;
+  background: url("//aahtgcboen.cloudimg.io/cdno/n/png-lossy-65/_legarti_/assets/projekte/legarti/showcase.jpg") center center no-repeat;
   background-size: cover;
 }
 @media screen and (min-width: 1000px) {
@@ -1518,7 +1518,7 @@ footer .bottom .rights {
   -ms-transform: translatez(0);
   -o-transform: translatez(0);
   transform: translatez(0);
-  background: url("../assets/wir/coreValue/background1.jpg") center center no-repeat;
+  background: url("//aahtgcboen.cloudimg.io/cdno/n/png-lossy-65/_legarti_/assets/wir/coreValue/background1.jpg") center center no-repeat;
   background-size: cover;
   margin-top: 5rem;
   transition: background-image 0.5s ease;
