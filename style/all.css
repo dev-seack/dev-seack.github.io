@@ -2087,7 +2087,13 @@ body.openMenu .navItemContainer .menuIcon:before {
 }
 
 .prozess{
-  margin-top: 400px;
+  margin-top: 300px;
+}
+
+@media screen and (min-width: 700px){
+  .prozess{
+    margin-top: 400px;
+  }
 }
 
 /* First Meeting*/
@@ -2141,6 +2147,28 @@ body.openMenu .navItemContainer .menuIcon:before {
   position: relative;
   top: 75px;
   right: 75px;
+}
+
+.prozess .headingContainer .heading{
+  font-size: 42px;
+}
+
+@media screen and (min-width: 700px){
+  .prozess .headingContainer .heading{
+      font-size: 62px;
+  }
+}
+
+@media screen and (min-width: 1200px){
+  .prozess .headingContainer .heading{
+      font-size: 82px;
+  }
+}
+
+@media screen and (min-width: 900px){
+  .prozess .headingContainer .heading{
+      font-size: 72px;
+  }
 }
 
 .prozess .contentContainer p{
