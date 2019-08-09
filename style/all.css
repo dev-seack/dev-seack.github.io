@@ -387,7 +387,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   position: fixed;
-  z-index: 100;
+  z-index: 1001;
   width: 100%;
   padding: 0 1rem;
   top: 0;
@@ -877,6 +877,8 @@ footer {
   justify-content: space-between;
   flex-direction: column;
   color: #ffffff;
+  position: relative;
+  z-index: 1000;
 }
 footer .content {
   display: flex;
@@ -2038,4 +2040,156 @@ body.openMenu .navItemContainer .menuIcon:before {
   content: "";
 }
 
+.fixedSidebar{
+  position: fixed;
+  right: 70px;
+  bottom: 0;
+  top: 0;
+  display: none;
+  align-items: center;
+  z-index: 900;
+  width: 200px;
+}
+
+@media screen and (min-width: 1400px){
+  .fixedSidebar{
+    display: flex;
+  }
+}
+
+.fixedSidebar ul{
+  width: 100%;
+  padding-left: 1em;
+}
+
+.fixedSidebar ul li{
+  margin: 1em 0;
+}
+
+.fixedSidebar ul li a{
+  color: rgba(51,51,51,0.5);
+  font-size: 1.1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: color .3s;
+}
+
+.fixedSidebar ul li a:hover{
+  color: #333333;
+  transition: color .3s;
+}
+
+/* Prozess Content Container */
+.prozessContainer{
+  margin: 350px auto 0 auto;
+  width: 100%;
+  max-width: 1000px;
+}
+
+.prozess{
+  margin-top: 400px;
+}
+
+/* First Meeting*/
+.overviewContainer div{
+  background-color: #333333;
+  color: #ffffff;
+  display: inline-block;
+  margin: 0;
+  text-align: center;
+  padding: 1em 0;
+  font-size: 1.2em;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-radius: 5px;
+}
+
+.overviewContainer .main{
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.15);
+}
+
+.overviewContainer p{
+  margin-top: 70px;
+  text-align: center;
+  font-size: 1.2em;
+  line-height: 1.3em;
+}
+
+.overviewContainer div.firstMeeting{
+  background-color: #ffda48;
+  color: #333333;
+}
+
+.overviewContainer div.lastRow{
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+    font-size: 1em;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+.prozess .headingContainer{
+  position: relative;
+}
+
+.prozess .headingContainer .number{
+  color: rgba(51,51,51,0.05);
+  text-shadow: none;
+  font-size: 50vw;
+  position: relative;
+  top: 75px;
+  right: 75px;
+}
+
+.prozess .contentContainer p{
+  margin-top: 70px;
+  text-align: center;
+  font-size: 1.2em;
+  line-height: 1.3em;
+  margin-top: 1.5em;
+}
+
+.prozess .contentContainer img{
+  margin-top: 50px;
+}
+
+@media screen and (min-width: 700px){
+  .prozess .headingContainer .number{
+    font-size: 350px;
+    top: 100px;
+    right: 175px;
+  }
+
+  
+  .prozess .headingContainer .number.reverse{
+    left: 175px;
+    text-align: right;
+  }
+
+  .prozess .headingContainer .heading.reverse{
+    text-align: right;
+  }
+
+  .prozess .contentContainer p{
+    text-align: left;
+  }
+}
+
+.primaryButton.light:before, .primaryButton.light:after {
+  background: #ffffff;
+}
+
+.col-100{
+  width: 100%;
+}
+
+.col-33{
+  width: 33.3%;
+}
+
+.center{
+  margin: 75px auto 0 auto;
+}
 /*# sourceMappingURL=all.css.map */
